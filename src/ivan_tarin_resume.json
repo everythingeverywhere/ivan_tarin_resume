@@ -92,7 +92,7 @@
     {
       "company": "BurgSimpson",
       "position": "Paralegal",
-      "website": "https://www.coloradolegalservices.org/",
+      "website": "https://www.burgsimpson.com/",
       "startDate": "2016-4",
       "endDate": "2017-10",
       "summary": "Provided support for Attorney helping Human Trafficing Victims",
@@ -110,7 +110,7 @@
     {
       "company": "Texas Rio Grande Legal Aid ",
       "position": "Paralegal",
-      "website": "http://www.jbakerlawgroup.com/",
+      "website": "http://www.trla.org/",
       "startDate": "2006-02",
       "endDate": "2015-11",
       "summary": "Provided all around support for Elder Law Attorneys",
@@ -186,7 +186,6 @@
     { "name": "Deployment",
       "level": "Itermediate to begginer",
       "keywords": [
-        "Virtualization",
         "AWS S3, Lambda and Cloud",
         "Heroku",
         "Pivotal",
