@@ -1,0 +1,314 @@
+{
+  "name": "Jane Q. Fullstacker",
+  "info": {
+    "label": "Senior Developer",
+    "image": "jane.png",
+    "brief": "**Imaginary full-stack software developer with 6+ years industry experience** specializing in cloud-driven web applications and middleware. A native of southern CA, Jane enjoys hiking, mystery novels, and the company of Rufus, her two year old beagle."
+  },
+  "contact": {
+    "email": "jdoe@onecoolstartup.io",
+    "phone": "1-650-999-7777",
+    "website": "https://www.janeblogs.com",
+    "other": [
+      {
+        "label": "Home Phone",
+        "flavor": "phone",
+        "value": "1-650-999-4321"
+      },
+      {
+        "label": "Work Phone",
+        "flavor": "phone",
+        "value": "1-650-777-1234"
+      },
+      {
+        "label": "Personal Email",
+        "flavor": "email",
+        "value": "jane@janeblogs.com"
+      }
+    ]
+  },
+  "meta": {
+    "format": "FRESH@^1.0.0-beta",
+    "modified": "2019-02-08T06:05:25.635Z"
+  },
+  "employment": {
+    "history": [
+      {
+        "position": "Head Code Ninja",
+        "employer": "Area 52",
+        "summary": "Development team manager for [**Quantum Diorama**](https://en.wikipedia.org/wiki/Vaporware), a distributed molecular modeling and analysis suite for Linux and OS X.",
+        "current": true,
+        "start": "2013-09",
+        "url": "https://area52.io/does-not-exist",
+        "keywords": [],
+        "highlights": [
+          "Managed a 5-person development team",
+          "Accomplishment 2",
+          "Etc."
+        ]
+      },
+      {
+        "position": "Principal Developer",
+        "employer": "Veridian Dynamics",
+        "summary": "Developer on numerous projects culminating in technical lead role for the [Jabberwocky project](http://betteroffted.wikia.com/wiki/Jabberwocky) and promotion to principal developer.",
+        "start": "2011-07",
+        "end": "2013-08",
+        "url": "https://en.wikipedia.org/wiki/Better_Off_Ted#Plot",
+        "keywords": [],
+        "highlights": [
+          "Managed a 5-person development team",
+          "Accomplishment 2",
+          "Etc."
+        ]
+      },
+      {
+        "position": "IT Administrator",
+        "employer": "Stark Industries",
+        "summary": "Junior programmer with heavy code responsibilities. Promoted to intermediate role after 6 months.",
+        "start": "2008-10",
+        "end": "2011-06",
+        "keywords": [],
+        "highlights": [
+          "Promoted to intermediate developer after 6 months",
+          "Accomplishment 2",
+          "Etc."
+        ]
+      },
+      {
+        "position": "Intern",
+        "employer": "Dunder Mifflin",
+        "summary": "Performed IT administration and deployments for Dunder Mifflin.",
+        "start": "2008-06",
+        "end": "2008-09",
+        "keywords": [],
+        "highlights": [
+          "Supervised roll-out of Dunder Mifflin Infinity website.",
+          "Performed mission-critical system backups and ",
+          "Etc."
+        ]
+      }
+    ]
+  },
+  "education": {
+    "level": "",
+    "history": [
+      {
+        "institution": "Cornell University",
+        "start": "2005-09",
+        "end": "2008-05",
+        "grade": "3.5",
+        "curriculum": [
+          "Course 1",
+          "Course 2",
+          "Course 2"
+        ],
+        "summary": ""
+      },
+      {
+        "institution": "Medfield College",
+        "start": "2003-09",
+        "end": "2005-06",
+        "grade": "3.2",
+        "curriculum": [
+          "Course 1",
+          "Course 2",
+          "Course 2"
+        ],
+        "summary": ""
+      }
+    ]
+  },
+  "service": {
+    "history": [
+      {
+        "type": "volunteer",
+        "position": "Technical Consultant",
+        "organization": "Technology for Tots",
+        "start": "2003-11",
+        "end": "2005-06",
+        "url": "http://technology-for-tots.org",
+        "summary": "Summary of this volunteer stint.",
+        "highlights": [
+          "Accomplishment 1",
+          "Accomplishment 2",
+          "etc"
+        ]
+      },
+      {
+        "type": "volunteer",
+        "position": "NCO",
+        "organization": "US Army Reserves",
+        "start": "1999-11",
+        "end": "2003-06",
+        "url": "http://www.usar.army.mil/",
+        "summary": "Summary of this military stint.",
+        "highlights": [
+          "Accomplishment 1",
+          "Accomplishment 2",
+          "etc"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "sets": [
+      {
+        "name": "Web",
+        "level": "advanced",
+        "skills": [
+          "JavaScript",
+          "HTML 5",
+          "CSS",
+          "LAMP",
+          "MVC",
+          "REST"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "level": "master",
+        "skills": [
+          "Node.js",
+          "Angular.js",
+          "jQuery",
+          "Bootstrap",
+          "React.js",
+          "Backbone.js"
+        ]
+      },
+      {
+        "name": "Database",
+        "level": "intermediate",
+        "skills": [
+          "MySQL",
+          "PostgreSQL",
+          "NoSQL",
+          "ORM",
+          "Hibernate"
+        ]
+      },
+      {
+        "name": "Cloud",
+        "level": "intermediate",
+        "skills": [
+          "AWS",
+          "EC2",
+          "RDS",
+          "S3",
+          "Azure",
+          "Dropbox"
+        ]
+      },
+      {
+        "name": "Project",
+        "level": "beginner",
+        "skills": [
+          "Agile",
+          "TFS",
+          "JIRA",
+          "GitHub",
+          "Unified Process",
+          "MS Project"
+        ]
+      }
+    ]
+  },
+  "writing": [
+    {
+      "title": "Building User Interfaces with Electron and Atom",
+      "publisher": "Code Project",
+      "url": "http://codeproject.com/build-ui-electron-atom.aspx",
+      "date": "2011"
+    },
+    {
+      "title": "Jane Fullstacker's Blog",
+      "publisher": "self",
+      "url": "https://www.janeblogs.com",
+      "date": "2011"
+    },
+    {
+      "title": "Teach Yourself GORFF in 21 Days",
+      "publisher": "Amazon",
+      "url": "http://url.to.publication.com/blah",
+      "date": "2008",
+      "summary": "A primer on the programming language of GORFF, whose for loops are coterminous with all of time and space."
+    }
+  ],
+  "recognition": [
+    {
+      "flavor": "award",
+      "title": "Honorable Mention",
+      "date": "2012",
+      "from": "Google"
+    },
+    {
+      "flavor": "honor",
+      "title": "Summa cum laude",
+      "date": "2012",
+      "from": "Cornell University"
+    }
+  ],
+  "social": [
+    {
+      "label": "GitHub",
+      "network": "GitHub",
+      "url": "https://github.com/janeq-was-here",
+      "user": "janeq-was-here"
+    },
+    {
+      "label": "Twitter",
+      "network": "Twitter",
+      "url": "https://twitter.com/janeq-was-here",
+      "user": "janeq-was-here"
+    }
+  ],
+  "interests": [
+    {
+      "name": "reading",
+      "summary": "Jane is a fan of mystery novels and courtroom dramas including Agatha Christie and John Grisham.",
+      "keywords": [
+        "mystery",
+        "Agatha Christie",
+        "John Grisham"
+      ]
+    },
+    {
+      "name": "hiking",
+      "summary": "Jane enjoys hiking, light mountain climbing, and has four summits under her belt!"
+    },
+    {
+      "name": "yoga"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "John Davidson",
+      "flavor": "professional",
+      "quote": "Jane is awesome! I'd hire her again in a heartbeat.",
+      "private": false
+    },
+    {
+      "name": "Elias Fullstacker",
+      "flavor": "professional",
+      "quote": "I worked with Jane on Jabberwocky and can vouch for her awesome technical capabilities and attention to detail. Insta-hire.",
+      "private": false
+    },
+    {
+      "name": "Dana Nevins",
+      "flavor": "professional",
+      "quote": "I've known Jane personally and professionally for almost ten years. She is one in a million.",
+      "private": false
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "Spanish",
+      "level": "Moderate",
+      "years": 10
+    }
+  ]
+}
