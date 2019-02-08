@@ -1,0 +1,248 @@
+{
+  "name": "Ivan Tarin",
+  "meta": {
+    "format": "FRESH@0.6.0",
+    "version": "0.5.0"
+  },
+
+  "basics": {
+    "name": "Ivan Tarin",
+    "label": "Software Developer",
+	"degree": "Multidisciplinary Bachelor Degree in Mathematics and Fine Arts.",
+    "picture": "face.jpg",
+    "email": "ivan0tarin@gmail.com",
+    "phone": "(915)929-6803",
+    "website": "http://ivantarin.com",
+    "summary": "Software developer experienced in many web, database, desktop, database, and mobile engineering",
+    "location": {
+      "postalCode": "80013",
+      "city": "Aurora",
+      "countryCode": "US",
+      "region": "Colorado"
+    },
+
+    "profiles": [
+      {
+        "network": "github",
+        "username": "everythingeverywhere",
+        "url": "https://github.com/everythingeverywhere"
+      },
+      {
+        "network": "Work github",
+        "username": "itarin",
+        "url": "https://github.com/itarin"
+      },
+      {
+        "network": "linkedin",
+        "username": "ivan-tarin",
+        "url": "https://www.linkedin.com/in/ivan-tarin-99555775/"
+      }
+    ]
+  },
+
+  "work": [
+    {
+      "company": "Techtonic",
+      "position": "Software Developer",
+      "website": "https://www.techtonic.com",
+      "startDate": "2018-07",
+      "summary": "I am a Junior Developer at Techtonic where we deliver software solutions tailored to our clients such as web apps, databases, cloud service, ios/android apps,  and more.",
+      "highlights": [
+        "In a two person team I assisted in building a full desktop application with Electron that integrated the user’s folder system and synced with a cloud server for one of our clients.Assisted in UI modifications to GIS map that used Ubisense MyWorld for another client.",
+        "Moved machine learning categorization and classification, and reporting, to an API model",
+        "In a two person team I assisted in building a full desktop application with Electron, Node, IBMCloud Object Storage that synced the user’s folder system with a private cloud server.",
+        "Assisted in extracting database from SalesForce and I helped research and create demo of a backend to query their SF database objects.",
+        "Contributed to a large legacy Ubuntu web app that has been around for several decades by implement extracting vital data from their MySQL database and made UI changes that helped create a new report.",
+        "Currently, assisting in a react-native application to modify the UI, prepare API entry points, and update the redux store."
+      ]
+    },
+
+    {
+      "company": "Baker Law Group",
+      "position": "Paralegal, Office Clerk, Book keeping",
+      "website": "http://www.jbakerlawgroup.com/",
+      "startDate": "2006-02",
+      "endDate": "2015-11",
+      "summary": "Provided all around support for Elder Law Attorneys",
+      "highlights": [
+          "Draft and file pleadings into Colorado Courts Electronic Filing System",
+          "Preparing invoices on Quickbooks and other accounting clerk work",
+          "Prepare legal correspondence ",
+          "Answer the phone and address questions from clients and potential client",
+          "Organize and create files",
+          "Purchase Office Supplies"
+      ]
+    },
+
+    {
+      "company": "Colorado Legal Services",
+      "position": "Paralegal",
+      "website": "https://www.coloradolegalservices.org/",
+      "startDate": "2016-10",
+      "endDate": "2017-6",
+      "summary": "Provided support for Attorney helping Human Trafficing Victims",
+      "highlights": [
+          "Assisting Attorneys on diverse immigration cases for clients such T-visa for victims of Human Trafficking and U-visa for victims of crime",
+          "Prepare legal documents, Conducting legal research",
+          "Prepare affidavits or other documents, correspondence, and organize and maintain documents in paper or electronic filing system.",
+          "Tracking and preparing quarterly grant reports with the assistance of Colorado Collaborative members and with supervision of Project Director"
+      ]
+    },
+
+    {
+      "company": "BurgSimpson",
+      "position": "Paralegal",
+      "website": "https://www.burgsimpson.com/",
+      "startDate": "2016-4",
+      "endDate": "2017-10",
+      "summary": "Provided support for Attorney helping Human Trafficing Victims",
+      "highlights": [
+        "Researching through medical records and writing medical summaries ",
+        "Investigating traffic accidents",
+        "Writing demands to insurance companies to recover clients losses so they can be ‘made whole’",
+        "Dealing with medical providers, subrogation, and insurance companies",
+        "Assisting attorneys with client intakes",
+        "Filing, organizing and ordering medical records, and other documents",
+        "Managing several cases and updating case management software"
+      ]
+    },
+
+    {
+      "company": "Texas Rio Grande Legal Aid ",
+      "position": "Paralegal",
+      "website": "http://www.trla.org/",
+      "startDate": "2006-02",
+      "endDate": "2015-11",
+      "summary": "Provided all around support for Elder Law Attorneys",
+      "highlights": [
+          "Prepare and present Retirement Disability(Title II) and Supplemental Security Income(Title XVI) cases to an Administrative Law Judge",
+          "Research cases through hundreds pages in medical records",
+          "Write briefs to persuade Administrative Law Judges",
+          "Advocate for homeless individuals and families from youth to advanced age.",
+          "Research laws, medical conditions, and anything else that clients might need.",
+          "Have an active caseload of clients from varying demographic areas and problems."
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "University of Colorado",
+      "area": "Computer Science",
+      "studyType": "Master Student",
+	  "website": "http://cs.colorado.edu",
+      "startDate": "2009-08",
+      "endDate": "2010-12",
+      "gpa": "4.0",
+      "courses": [
+        "Algorithms (upper-level)", "Database Systems 1 and 2 (upper-level)"
+      ]
+    },
+
+    {
+      "institution": "University of Texas at El Paso",
+      "area":  "Math | Fine Art",
+      "completion": "May 2012"
+    }
+  ],
+
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Advanced to Intermediate",
+      "keywords": [
+        "bash",
+        "JavaScript ES5/ES6",
+        "Python",
+        "Java"
+      ]
+    },
+
+    {
+      "name": "Database",
+      "level": "Itermediate to begginer",
+      "keywords": [
+        "SQL",
+        "SQLite, MySQL and PostgreSQL, SOQL ",
+        "Mongoose",
+        "SOQL",
+        "NoSQL and Document Stores"
+      ]
+    },
+
+    {
+      "name": "Python Specific",
+      "level": "Varies",
+      "keywords": [
+        " BeautifulSoup for web scraping and parsing HTML web pages",
+        "Jupyter Notebooks",
+        "pandas / matplotlib / scipy",
+        "Pip3 and pipenv ",
+        "django",
+        "JetBrains PyCharm"
+      ]
+    },
+
+    { "name": "Deployment",
+      "level": "Itermediate to begginer",
+      "keywords": [
+        "AWS S3, Lambda and Cloud",
+        "Heroku",
+        "Pivotal",
+        "Google Cloud"
+      ]
+    },
+
+    {
+      "name": "node.js",
+      "level": "Beginner to Some Advanced Features",
+      "keywords": [
+        "node file system",
+        "async",
+        "express, mongoose, mongoDB"
+      ]
+    },
+
+    {
+      "name": "Development Environments",
+      "level": "Bigginer to Intermediate",
+      "keywords": [
+       "Unix, Linux, Bash, Microsoft command prompt, vim, nano and command line",
+       "Virtual Machine (VM) experience running and installing virtualBox, VMWare",
+       "Jupyter Notebooks, some docker."
+      ]
+    },
+
+    { "name": "Systems",
+      "level": "Bigginer to Intermediate",
+      "keywords": [
+        "Ubuntu",
+        "Linux",
+        "SSH"
+      ] 
+    }
+  ],
+
+  "interests": [
+    {
+      "name": "Fine Art"
+    },
+
+    {
+      "name": "Video Games"
+    },
+
+    {
+      "name": "Family and dog"
+    }
+  ],
+
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker",
+      "language_2": "Spanish",
+      "fluency_2": "Native speaker"
+    }
+  ]
+}
