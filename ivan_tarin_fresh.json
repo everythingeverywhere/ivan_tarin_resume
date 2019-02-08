@@ -10,13 +10,13 @@
     "info": {
       "label": "Software Developer",
       "characterClass": "Programmer",
-      "brief": "Software developer experienced in web, database, desktop, database, and mobile engineering. With more than 9 years professional work experience, a hobbiest at first, now with a year in the industry and have delivered to project work for clients.",
+      "brief": "Software developer experienced in web, database, desktop, and mobile engineering. With more than 9 years professional work experience, and with one year in the software industry delivering project work at Techtonic for other companies. I have hands on experience in backend, frontend, web, api, desktop, and mobile apps.",
       "image": "git_profile_pic.png",
       "quote": "The most difficult problems in life are insoluable, they cannot be solved only overcome."
     },
   
     "contact": {
-      "website": "website": "http://ivantarin.com",
+      "website": "http://ivantarin.com",
       "phone": "(915)929-6803",
       "email": "ivan0tarin@gmail.com",
       "other": [
@@ -99,7 +99,7 @@
           "summary":"Provided support for Attorney helping Human Trafficing Victims",
           "start": "2016-10",
           "end": "2017-06",
-          "keywords": ["Microsoft Office","Excel"],
+          "keywords": ["Microsoft Office","Excel",  "Various Legal reference books"],
           "highlights": [
             "Assisting Attorneys on diverse immigration cases for clients such T-visa for victims of Human Trafficking and U-visa for victims of crime",
             "Prepare legal documents, Conducting legal research",
@@ -115,7 +115,7 @@
           "summary": "Performed IT administration and deployments for Dunder Mifflin.",
           "start": "2016-4",
           "end": "2017-10",
-          "keywords": ["Microsoft Office","Excel"],
+          "keywords": ["Microsoft Office","Excel", "Various Legal reference books"],
           "highlights": [
             "Researching through medical records and writing medical summaries ",
             "Investigating traffic accidents",
@@ -134,7 +134,7 @@
           "summary": "Performed IT administration and deployments for Dunder Mifflin.",
           "start": "2013-10",
           "end": "2016-02",
-          "keywords": ["Novell","Social Security","Linux","Windows"],
+          "keywords": ["Social Security","Microsoft Office",  "Various Legal reference books"],
           "highlights":  [
             "Prepare and present Retirement Disability(Title II) and Supplemental Security Income(Title XVI) cases to an Administrative Law Judge",
             "Research cases through hundreds pages in medical records",
@@ -243,7 +243,7 @@
         {
           "name": "node.js",
           "level": "intermediate",
-          "keywords": [
+          "skills": [
             "node file system",
             "async",
             "express, mongoose, mongoDB"
@@ -253,22 +253,41 @@
         {
           "name": "Python",
           "level": "intermediate",
+          "summary": "Assisted in legacy project that used python adding functions and classes, in another project helped in a python parser, and self study.",
           "skills": [
             " BeautifulSoup for web scraping and parsing HTML web pages",
             "Jupyter Notebooks",
-            "pandas / matplotlib / scipy",
-            "Pip3 and pipenv ",
+            "pandas",
+            "matplotlib", 
+            "scipy",
+            "Pip3",
+            "pipenv ",
             "django",
-            "JetBrains PyCharm"
+            "JetBrains", 
+            "PyCharm"
           ]
         },
+
+        {
+          "name": "Java",
+          "summary": "Intro college course",
+          "level": "bigginer",
+          "months": "6",
+          "skills": [
+            "Intro college course"
+          ]
+        },
+
 
         {
           "name": "Database",
           "level": "intermediate",
           "skills": [
             "SQL",
-            "SQLite, MySQL and PostgreSQL, SOQL",
+            "SQLite", 
+            "MySQL",
+            "PostgreSQL",
+            "SOQL",
             "Mongoose",
             "SOQL",
             "NoSQL and Document Stores",
@@ -286,8 +305,11 @@
 
         { "name": "Deployment",
           "level": "Itermediate to begginer",
-          "keywords": [
-            "AWS S3, Lambda and Cloud",
+          "skills": [
+            "AWS",
+            "S3", 
+            "Lambda",
+            "Cloud",
             "Heroku",
             "Pivotal",
             "Google Cloud"
@@ -296,12 +318,23 @@
 
         { "name": "Development Environments",
           "level": "Bigginer to Intermediate",
-          "keywords": [
-            "Unix, Linux, Bash, Microsoft command prompt, vim, nano and command line",
-            "Virtual Machine (VM) experience running and installing virtualBox, VMWare",
-            "Jupyter Notebooks, some docker.",
-            "VS Code, Atom, Sublime, Pycharm"
+          "skills": [
+            "Unix", "Linux", "Bash", "Microsoft command prompt", "vim", "nano", "command line",
+            "virtualBox", "VMWare",
+            "Jupyter Notebooks", "docker",
+            "VS Code", "Atom", "Sublime", "Pycharm"
           ] 
+        },
+
+        {
+          "name": "Virtual Machines",
+          "level": "begginner",
+          "months": "6",
+          "skills": [
+            "VMWare", 
+            "Virtual Box", 
+            "Docker"
+           ]
         },
 
         {
@@ -310,38 +343,6 @@
           "skills": [
             "Agile", "JIRA", "GitHub", "SCRUM", "Slack"
           ]
-        }
-      ],
-  
-      "list": [
-        {
-          "name": "JavaScript",
-          "id": "1",
-          "summary": "1000 hours of work experience, online bootcamp, Techtonic Academy, and self study.",
-          "level": "8",
-          "years": "2"
-        },
-
-        {
-          "name": "Python",
-          "id": "2",
-          "summary": "Assisted in legacy project that used python adding functions and classes, helped in a python parser project, and self study.",
-          "level": "7",
-          "years": "6 months"
-        },
-
-        {
-          "name": "Java",
-          "summary": "Intro college course",
-          "level": "4",
-          "years": "6 months"
-        },
-
-        {
-          "name": "Virtual Machines",
-          "summary": "VMWare, Virtual Box, Docker and other virtual environments.",
-          "level": "begginner",
-          "years": "6 months"
         }
       ]
     },
@@ -362,7 +363,7 @@
       {
         "title": "Coding Horror",
         "flavor": "blog",
-        "url": "http://www.codinghorror.com",
+        "url": "http://www.codinghorror.com"
       },
       {
         "title": "Savior at times",

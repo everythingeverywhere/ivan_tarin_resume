@@ -1,227 +1,366 @@
-basics:
-  label: 'Senior Developer'
+name: 'Ivan Tarin'
+meta:
+  format: FRESH@0.6.0
+  version: 0.5.0
+info:
+  label: 'Software Developer'
   characterClass: Programmer
-  quote: 'Be the change you want to see in the world.'
-  website: 'https://www.janeblogs.com'
-  phone: 1-650-999-7777
-  email: jdoe@onecoolstartup.io
+  brief: 'Software developer experienced in web, database, desktop, and mobile engineering. With more than 9 years professional work experience, and with one year in the software industry delivering project work at Techtonic for other companies. I have hands on experience in backend, frontend, web, api, desktop, and mobile apps.'
+  image: git_profile_pic.png
+  quote: 'The most difficult problems in life are insoluable, they cannot be solved only overcome.'
+contact:
+  website: 'http://ivantarin.com'
+  phone: (915)929-6803
+  email: ivan0tarin@gmail.com
   other:
-    -
-      label: 'Home Phone'
-      flavor: phone
-      value: 1-650-999-4321
-    -
-      label: 'Work Phone'
-      flavor: phone
-      value: 1-650-777-1234
     -
       label: 'Personal Email'
       flavor: email
-      value: jane@janeblogs.com
-  name: 'Jane Q. Fullstacker'
-  summary: '**Imaginary full-stack software developer with 6+ years industry experience** specializing in cloud-driven web applications and middleware. A native of southern CA, Jane enjoys hiking, mystery novels, and the company of Rufus, her two year old beagle.'
-  picture: jane.png
-  profiles:
+      value: ivan0tarin@gmail.com
+location:
+  region: Colorado
+  code: '80013'
+  country: US
+social:
+  -
+    label: GitHub
+    network: GitHub
+    user: everythingeverywhere
+    url: 'https://github.com/everythingeverywhere'
+  -
+    label: 'Github for Work'
+    network: Github
+    user: itarin
+    url: 'https://github.com/itarin'
+employment:
+  summary: '9 years professional work experience'
+  history:
     -
-      network: GitHub
-      username: janeq-was-here
-      url: 'https://github.com/janeq-was-here'
+      employer: Techtonic
+      url: 'https://www.techtonic.com'
+      position: 'Software Developer'
+      summary: 'I am a Junior Developer at Techtonic a software company where we deliver solutions tailored to our clients such as web apps, databases, cloud service, ios/android mobile apps, and more.'
+      start: 2018-02
+      keywords:
+        - Agile
+        - JavaScript
+        - Python
+        - HTML
+        - CSS
+        - React
+        - 'React Native'
+        - Mobile
+        - SQL
+        - MySQL
+        - PostgreSQL
+        - JIRA
+        - Node
+      highlights:
+        - 'In a two person team I assisted in building a full desktop application with Electron that integrated the user’s folder system and synced with a cloud server for one of our clients.Assisted in UI modifications to GIS map that used Ubisense MyWorld for another client.'
+        - 'Moved machine learning categorization and classification, and reporting, to an API model'
+        - 'In a two person team I assisted in building a full desktop application with Electron, Node, IBMCloud Object Storage that synced the user’s folder system with a private cloud server.'
+        - 'Assisted in extracting database from SalesForce and I helped research and create demo of a backend to query their SF database objects.'
+        - 'Contributed to a large legacy Ubuntu web app that has been around for several decades by implement extracting vital data from their MySQL database and made UI changes that helped create a new report.'
+        - 'Currently, assisting in a react-native application to modify the UI, prepare API entry points, and update the redux store.'
     -
-      network: Twitter
-      username: janeq-was-here
-      url: 'https://twitter.com/janeq-was-here'
-work:
-  -
-    company: 'Area 52'
-    website: 'https://area52.io/does-not-exist'
-    position: 'Head Code Ninja'
-    startDate: 2013-09
-    summary: 'Development team manager for [**Quantum Diorama**](https://en.wikipedia.org/wiki/Vaporware), a distributed molecular modeling and analysis suite for Linux and OS X.'
-    highlights:
-      - 'Managed a 5-person development team'
-      - 'Accomplishment 2'
-      - Etc.
-  -
-    company: 'Veridian Dynamics'
-    website: 'https://en.wikipedia.org/wiki/Better_Off_Ted#Plot'
-    position: 'Principal Developer'
-    startDate: 2011-07
-    endDate: 2013-08
-    summary: 'Developer on numerous projects culminating in technical lead role for the [Jabberwocky project](http://betteroffted.wikia.com/wiki/Jabberwocky) and promotion to principal developer.'
-    highlights:
-      - 'Managed a 5-person development team'
-      - 'Accomplishment 2'
-      - Etc.
-  -
-    company: 'Stark Industries'
-    position: 'IT Administrator'
-    startDate: 2008-10
-    endDate: 2011-06
-    summary: 'Junior programmer with heavy code responsibilities. Promoted to intermediate role after 6 months.'
-    highlights:
-      - 'Promoted to intermediate developer after 6 months'
-      - 'Accomplishment 2'
-      - Etc.
-  -
-    company: 'Dunder Mifflin'
-    position: Intern
-    startDate: 2008-06
-    endDate: 2008-09
-    summary: 'Performed IT administration and deployments for Dunder Mifflin.'
-    highlights:
-      - 'Supervised roll-out of Dunder Mifflin Infinity website.'
-      - 'Performed mission-critical system backups and '
-      - Etc.
+      employer: 'Baker Law Group'
+      url: 'http://www.jbakerlawgroup.com/'
+      position: 'Paralegal, Office Clerk, Book keeping'
+      summary: 'Provided all around support for Elder Law Attorneys'
+      start: 2017-07
+      end: 2017-11
+      keywords:
+        - Quickbooks
+        - 'Microsoft Office'
+        - Excel
+      highlights:
+        - 'Draft and file pleadings into Colorado Courts Electronic Filing System'
+        - 'Preparing invoices on Quickbooks and other accounting clerk work'
+        - 'Prepare legal correspondence '
+        - 'Answer the phone and address questions from clients and potential client'
+        - 'Organize and create files'
+        - 'Purchase Office Supplies'
+    -
+      employer: 'Colorado Legal Services'
+      url: 'https://www.coloradolegalservices.org/'
+      position: Paralegal
+      summary: 'Provided support for Attorney helping Human Trafficing Victims'
+      start: 2016-10
+      end: 2017-06
+      keywords:
+        - 'Microsoft Office'
+        - Excel
+        - 'Various Legal reference books'
+      highlights:
+        - 'Assisting Attorneys on diverse immigration cases for clients such T-visa for victims of Human Trafficking and U-visa for victims of crime'
+        - 'Prepare legal documents, Conducting legal research'
+        - 'Prepare affidavits or other documents, correspondence, and organize and maintain documents in paper or electronic filing system.'
+        - 'Tracking and preparing quarterly grant reports with the assistance of Colorado Collaborative members and with supervision of Project Director'
+    -
+      employer: BurgSimpson
+      url: 'https://www.burgsimpson.com/'
+      position: Paralegal
+      summary: 'Performed IT administration and deployments for Dunder Mifflin.'
+      start: 2016-4
+      end: 2017-10
+      keywords:
+        - 'Microsoft Office'
+        - Excel
+        - 'Various Legal reference books'
+      highlights:
+        - 'Researching through medical records and writing medical summaries '
+        - 'Investigating traffic accidents'
+        - 'Writing demands to insurance companies to recover clients losses so they can be ‘made whole’'
+        - 'Dealing with medical providers, subrogation, and insurance companies'
+        - 'Assisting attorneys with client intakes'
+        - 'Filing, organizing and ordering medical records, and other documents'
+        - 'Managing several cases and updating case management software'
+    -
+      employer: 'Texas Rio Grande Legal Aid '
+      url: 'http://www.trla.org/'
+      position: Paralegal
+      summary: 'Performed IT administration and deployments for Dunder Mifflin.'
+      start: 2013-10
+      end: 2016-02
+      keywords:
+        - 'Social Security'
+        - 'Microsoft Office'
+        - 'Various Legal reference books'
+      highlights:
+        - 'Prepare and present Retirement Disability(Title II) and Supplemental Security Income(Title XVI) cases to an Administrative Law Judge'
+        - 'Research cases through hundreds pages in medical records'
+        - 'Write briefs to persuade Administrative Law Judges'
+        - 'Advocate for homeless individuals and families from youth to advanced age.'
+        - 'Research laws, medical conditions, and anything else that clients might need.'
+        - 'Have an active caseload of clients from varying demographic areas and problems.'
 education:
-  -
-    institution: 'Cornell University'
-    gpa: '3.5'
-    courses:
-      - 'Course 1'
-      - 'Course 2'
-      - 'Course 2'
-    startDate: 2005-09
-    endDate: 2008-05
-  -
-    institution: 'Medfield College'
-    gpa: '3.2'
-    courses:
-      - 'Course 1'
-      - 'Course 2'
-      - 'Course 2'
-    startDate: 2003-09
-    endDate: 2005-06
+  summary: 'A background rooted in problem solving learned in Mathematics and Art'
+  level: degree
+  degree: 'Bachelor Degree'
+  history:
+    -
+      institution: 'Techtonic Academy'
+      title: 'Software apprenticeship'
+      url: 'https://www.techtonic.com/'
+      start: 2005-09
+      end: 2018-08
+      grade: '3.5'
+      summary: 'Full software development course and paid work experience.'
+      curriculum:
+        - 'Discrete Math'
+        - 'Liner Algebra'
+        - 'Matrix Algebra'
+        - 'Calculus I, II , III'
+    -
+      institution: 'University of Texas at El Paso'
+      title: Bachelors
+      url: 'https://www.utep.edu/'
+      start: '2003'
+      end: '2012'
+      summary: 'Math | Fine Art'
+      curriculum:
+        - 'Course 1'
+        - 'Course 2'
+        - 'Course 2'
+service:
+  summary: 'Was part of a great team of people helping the fight against poverty'
+  history:
+    -
+      flavor: volunteer
+      position: 'Volunteer in Service to America'
+      organization: AmeriCorps
+      url: 'https://www.nationalservice.gov/programs/americorps'
+      start: 2010-08
+      end: 2012-01
+      summary: 'Summary of this volunteer stint.'
+      highlights:
+        - 'Helped manage a free tax preparation center at Houchen in Segundo Barrio'
+        - 'Developed a marketing program for Mountain Star Federal Credit Union and El Paso Affordable Housing'
+        - 'Regularly taught 8-hour housing/financial workshop in English and Spanish'
+        - 'Developed a comic book to encourage saving money (Which won an award from the IRS)'
+        - 'Participated in a payday loan alternative program'
+        - 'Worked on Community Development Financial Institution certification'
+        - 'Acted as a mentor in the UTEP Gear Up program to get enroll youth at universities'
 skills:
+  sets:
+    -
+      name: 'Programming Languages'
+      level: 'intermediate to advanced'
+      skills:
+        - bash
+        - JavaScript
+        - Python
+        - 'Willing to learn'
+    -
+      name: Web
+      level: 'intermediate to advanced'
+      skills:
+        - JavaScript
+        - 'HTML 5'
+        - CSS
+        - React
+        - MVC
+        - REST
+    -
+      name: JavaScript
+      level: intermediate
+      skills:
+        - Node.js
+        - Express
+        - jQuery
+        - AJAX
+        - Bootstrap
+        - React.js
+        - 'React Native'
+        - ES5
+        - ES6
+    -
+      name: node.js
+      level: intermediate
+      skills:
+        - 'node file system'
+        - async
+        - 'express, mongoose, mongoDB'
+    -
+      name: Python
+      level: intermediate
+      summary: 'Assisted in legacy project that used python adding functions and classes, in another project helped in a python parser, and self study.'
+      skills:
+        - ' BeautifulSoup for web scraping and parsing HTML web pages'
+        - 'Jupyter Notebooks'
+        - pandas
+        - matplotlib
+        - scipy
+        - Pip3
+        - 'pipenv '
+        - django
+        - JetBrains
+        - PyCharm
+    -
+      name: Java
+      summary: 'Intro college course'
+      level: bigginer
+      months: '6'
+      skills:
+        - 'Intro college course'
+    -
+      name: Database
+      level: intermediate
+      skills:
+        - SQL
+        - SQLite
+        - MySQL
+        - PostgreSQL
+        - SOQL
+        - Mongoose
+        - SOQL
+        - 'NoSQL and Document Stores'
+        - ORM
+    -
+      name: Cloud
+      level: intermediate
+      skills:
+        - AWS
+        - 'Google Cloud'
+        - Pivotal
+        - S3
+        - 'IBM Object Storage'
+    -
+      name: Deployment
+      level: 'Itermediate to begginer'
+      skills:
+        - AWS
+        - S3
+        - Lambda
+        - Cloud
+        - Heroku
+        - Pivotal
+        - 'Google Cloud'
+    -
+      name: 'Development Environments'
+      level: 'Bigginer to Intermediate'
+      skills:
+        - Unix
+        - Linux
+        - Bash
+        - 'Microsoft command prompt'
+        - vim
+        - nano
+        - 'command line'
+        - virtualBox
+        - VMWare
+        - 'Jupyter Notebooks'
+        - docker
+        - 'VS Code'
+        - Atom
+        - Sublime
+        - Pycharm
+    -
+      name: 'Virtual Machines'
+      level: begginner
+      months: '6'
+      skills:
+        - VMWare
+        - 'Virtual Box'
+        - Docker
+    -
+      name: Project
+      level: beginner
+      skills:
+        - Agile
+        - JIRA
+        - GitHub
+        - SCRUM
+        - Slack
+reading:
   -
-    name: Web
-    level: advanced
-    keywords:
-      - JavaScript
-      - 'HTML 5'
-      - CSS
-      - LAMP
-      - MVC
-      - REST
+    title: r/programming
+    flavor: website
+    url: 'https://www.reddit.com/'
+    summary: 'Daily reader and longtime lurker.'
   -
-    name: JavaScript
-    level: master
-    keywords:
-      - Node.js
-      - Angular.js
-      - jQuery
-      - Bootstrap
-      - React.js
-      - Backbone.js
+    title: 'Hacker News / YCombinator'
+    flavor: website
+    url: 'https://news.ycombinator.com/'
+    summary: 'Daily reader and longtime lurker.'
   -
-    name: Database
-    level: intermediate
-    keywords:
-      - MySQL
-      - PostgreSQL
-      - NoSQL
-      - ORM
-      - Hibernate
+    title: 'Coding Horror'
+    flavor: blog
+    url: 'http://www.codinghorror.com'
   -
-    name: Cloud
-    level: intermediate
-    keywords:
-      - AWS
-      - EC2
-      - RDS
-      - S3
-      - Azure
-      - Dropbox
+    title: 'Savior at times'
+    flavor: website
+    url: 'http://www.stackoverflow.com/'
+    summary: 'My ''desert-island'' software construction manual.'
   -
-    name: Project
-    level: beginner
-    keywords:
-      - Agile
-      - TFS
-      - JIRA
-      - GitHub
-      - 'Unified Process'
-      - 'MS Project'
-volunteer:
-  -
-    flavor: volunteer
-    organization: 'Technology for Tots'
-    position: 'Technical Consultant'
-    startDate: 2003-11
-    endDate: 2005-06
-    website: 'http://technology-for-tots.org'
-    summary: 'Summary of this volunteer stint.'
-    highlights:
-      - 'Accomplishment 1'
-      - 'Accomplishment 2'
-      - etc
-  -
-    flavor: military
-    organization: 'US Army Reserves'
-    position: NCO
-    startDate: 1999-11
-    endDate: 2003-06
-    website: 'http://www.usar.army.mil/'
-    summary: 'Summary of this military stint.'
-    highlights:
-      - 'Accomplishment 1'
-      - 'Accomplishment 2'
-      - etc
-awards:
-  -
-    flavor: award
-    title: 'Honorable Mention'
-    date: '2012'
-    awarder: Google
-  -
-    flavor: honor
-    title: 'Summa cum laude'
-    date: '2012'
-    awarder: 'Cornell University'
-publications:
-  -
-    name: 'Building User Interfaces with Electron and Atom'
-    publisher: 'Code Project'
-    releaseDate: '2011'
-    website: 'http://codeproject.com/build-ui-electron-atom.aspx'
-  -
-    name: 'Jane Fullstacker''s Blog'
-    publisher: self
-    releaseDate: '2011'
-    website: 'https://www.janeblogs.com'
-  -
-    name: 'Teach Yourself GORFF in 21 Days'
-    publisher: Amazon
-    releaseDate: '2008'
-    website: 'http://url.to.publication.com/blah'
-    summary: 'A primer on the programming language of GORFF, whose for loops are coterminous with all of time and space.'
-interests:
-  -
-    name: reading
-    summary: 'Jane is a fan of mystery novels and courtroom dramas including Agatha Christie and John Grisham.'
-    keywords:
-      - mystery
-      - 'Agatha Christie'
-      - 'John Grisham'
-  -
-    name: hiking
-    summary: 'Jane enjoys hiking, light mountain climbing, and has four summits under her belt!'
-  -
-    name: yoga
-references:
-  -
-    name: 'John Davidson'
-    reference: 'Jane is awesome! I''d hire her again in a heartbeat.'
-  -
-    name: 'Elias Fullstacker'
-    reference: 'I worked with Jane on Jabberwocky and can vouch for her awesome technical capabilities and attention to detail. Insta-hire.'
-  -
-    name: 'Dana Nevins'
-    reference: 'I''ve known Jane personally and professionally for almost ten years. She is one in a million.'
+    title: 'Good industry and how to articles.'
+    flavor: website
+    url: 'http://www.medium.com/'
+    summary: 'My ''desert-island'' software construction manual.'
 languages:
   -
     language: English
     level: Native
   -
     language: Spanish
-    level: Moderate
-    years: 10
+    level: Native
+  -
+    language: 'German & French'
+    level: 'Learn for fun'
+interests:
+  -
+    name: Coding
+    summary: 'I love to keep learning, machine learning and data science are very interesting to me.'
+  -
+    name: 'Fine Art'
+    summary: 'Ivan is also a professional artist and enjoys making fine art'
+    keywords:
+      - painting
+      - cubism
+      - 'fine art'
+  -
+    name: 'Video games'
+    summary: 'Will sometimes play a game or two.'
+  -
+    name: 'Family and dog'
+    summary: 'Wife, incoming baby, adopted mixed doberman.'

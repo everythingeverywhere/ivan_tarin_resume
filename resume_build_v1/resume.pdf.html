@@ -1,1057 +1,911 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-	<title>Jane Q. Fullstacker</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
-	<style>
-		/********************************************
-* 	reset from
-* 	http://meyerweb.com/eric/tools/css/reset/
-*******************************************/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+  <head>
+    <meta charset="utf-8">
+
+    <title>Ivan Tarin</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <style>
+* {
+  box-sizing: border-box;
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+main {
+  display: block;
 }
+
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* Custom reset */
-.main-summary p, 
-#publications .item,
-#skills .item,
-#languages .item,
-#references .item,
-#interests .item{
-	margin: 0;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.42857143;
+  background-color: #F0F0F0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Calibri', 'sans-serif';
 }
 
-
-/****************
-*		SMARTPHONES		
-****************/
-em {
-	color: #757575;
-}
-p {
-	margin: 1em 0;
-}
-blockquote {
-	margin: 0;
-	margin-bottom: 1em;
-}
-strong {
-	font-weight: 700;
-	font-size: 1.1em;
-}
-ul {
-	margin-top: 1em; 
-}
-div.item {
-	margin: 1em 0 2em;
-	padding-bottom: 2em;
-}
-div.item:last-of-type {
-	margin: 0;
-	border-bottom: none;
-	padding-bottom: 0;
-}
-p {
-	text-align: justify;
+/* Typical page borders are awkward when rendered to PDF. */
+body.pdf {
+  background-color: #FFFFFF;
 }
 
-
-/* Headers */
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 700;
-}
-h1 {
-	font-size: 2.5rem;
-}
-h2,
-h3 {
-	font-size: 1rem;
-}
-a {
-	color: #EB5F51;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
+/* Adobe or wkhtmltopdf has issues with the <main> tag, so we use <div> for
+the PDF case, <main> for the HTML case, and style both via an ID. */
+#main {
+  background-color: #FFF;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #E6E6E6;
 }
 
-/* Layout */
-body {
-	background: #f2f2f2;
-	line-height: 1.6;
-	font-size: 13px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+body.pdf > #main {
+  border: none;
 }
 
-#resume {
-	padding: 1rem 0;
-	margin: 1rem auto;
-}
-
-#header {
-	padding: 0 1em;
-	margin-bottom: 1em;
-}
-
-#resume > header div {
-	display: table;
-	padding-left: 0.5em;
-}
-
-#resume > header div.middle {
-	padding-top: 1.5em;
-}
-
-header img {
-	display: block;
-	width: 10em;
-	border-radius: 0.275em;
-	float: right;
-	vertical-align: middle;
-}
-
-header .name {
-	line-height: 1;
-}
-
-header .label {
-	font-size: 1.5rem;
-	font-weight: 400;
-	color: #757575;
-}
-
-section:not(.section) {
-	padding: .5em 1rem;
-}
-
-section#references {
-	border-bottom:none;
-}
-
-section#basics {
-	background: inherit;
-	margin-bottom: 0;
-}
-
-section#skills {
-	padding-bottom: 0;
-}
-
-section#education, 
-section#work, 
-.main-summary section {
-	padding-bottom: 1em;
-}
-
-header::after {
-	display: table;
-	content: " ";
-	clear: both;
-}
-
-h2.section-title {
-	text-align: left;
-	font-size: 1rem;
-	font-weight: 400;
-	color: #757575;
-	padding: 1em 1rem 0;
-	margin-bottom: 0.1275em;
-}
-
-.date {
-	font-weight: 700;
-	color: #757575;
-}
-
-.position, .area, .institution {
-	font-weight: 700;
-}
-
-#interests .item, #languages .item {
-	padding: 0 1em 1em 0;
-	border-bottom: none;
-}
-
-.website::before {
-	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-decoration: none;
-	min-width: 1.25em;
-	margin-right: 0.25em;
-	text-align: center;
-	content: '\f14c';
-}
-
-#profiles, #skills, #interests, #languages {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-	-webkit-justify-content: flex-start;
-	justify-content: flex-start;
+#container > header {
+  padding-top: 6em;
   padding-bottom: 1em;
 }
 
-#profiles, #location {
-	box-shadow: none;
-	padding: 0;
+body.pdf #container > header {
+  padding: 0;
 }
 
-#profiles .item {
-	margin: 0;
-	padding: 0;
-	padding-right: 1em;
-	border-bottom: none;
+#main > #container > section {
+  margin-left: 150px;
+  position: relative;
+  display: block;
 }
 
-#interests ul {
-	margin-top: 0.5em;
+section > div {
+  margin-bottom: 60px;
 }
 
-#publications .name {
-	font-style: italic;
+span.fa
+{
+  font-size: 56px;
+  position: absolute;
+  top: 37px;
+  transform: translateY(-50%);
+  left: -100px;
+  color: #1a4367;
 }
 
-.courses li, .keywords li{
-	display: inline-block;
-	background: #f0f0f0;
-	font-size: 0.9em;
-	line-height: 1;
-	color: #333;
-	padding: 0.4em 0.8em;
-	border-bottom: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-	border-radius: 3px;
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #EEE;
 }
 
-#publications .date {
-	font-weight: normal;
-	color: #000;	
+.tenure, .keywords {
+  font-size: 75%;
 }
 
-#skills .item {
-	min-width: 15em;
-	padding: 0 .5em .8em 0;
-	border-bottom: none;
+h1 {
+  margin: 0;
+  font-size: 46px;
+  display: inline-block;
 }
 
-
-/* Skills chart */
-#skills .level .bar {
-	border: 1px solid #ddd;
-	display: block;
-	width: 10em;
-	height: 5px;
-	margin: 0em 0 1em 0;
-	position: relative;
+h2 {
+  font-size: 30px;
+  color: #4376a2;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-top: 20px;
+  margin-bottom: 60px;
 }
 
-#skills .level .bar::after {
-	position: absolute;
-	content: " ";
-	top: 0;
-	left: 0;
-	background: black;
-	height: 5px;
+h3 {
+  margin-bottom: 0;
+  font-size: 18px;
 }
 
-#skills .level.beginner .bar::after {
-	background: #EB5F51;
-	width: 2.5em;
-} 
-
-#skills .level.intermediate .bar::after {
-	background: #ffdf1f;
-	width: 5em;
-} 
-
-#skills .level.advanced .bar::after {
-	background: #59C596;
-	width: 7.5em;
-} 
-
-#skills .level.master .bar::after {
-	background: #5CB85C;
-	width: 10em;
+a, a:visited {
+  color: #428BCA;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-#references .item {
-	padding-left: 1em;
-	border-left: 5px solid #EB5F51;
+a:hover {
+  text-decoration: underline;
 }
 
-.fa.social {
-	margin-right: 0.25em;
-	font-size: 1.1em;
+.defunct {
+  color: #989898;
+  font-weight: bold;
 }
 
-/* Social Media Brand Colors */
-.google-plus {
-	color: #dd4b39;	
+#summary {
+  font-size: 150%;
+  margin-left: 0;
+  padding: 20px 0;
 }
 
-.tumblr {
-	color:#32506d;
+#summary > p > strong {
+  font-size: 1.25em;
 }
 
-.foursquare {
-	color:  #0072b1;
+#contact {
+  float: right;
 }
 
-.facebook {
-	color: #3b5998;
+#summary > header > .fa-info {
+  font-size: 70px;
+  /*letter-spacing: 5px; PDFs hate letter-spacing */
+  text-transform: uppercase;
+  font-weight: normal;
+  top: 50%;
+  left: -85px;
+  transform: translateY(-50%);
 }
 
-.linkedin {
-	color: #007bb6;
-}
-
-.pinterest {
-	color: #cb2027;
-}
-
-.dribbble {
-	color: #ea4c89;
-}
-
-.instagram {
-	color: #517fa4;
-}
-
-.twitter {
-	color: #00aced;
-}
-
-.soundcloud { 
-	color: #ff3a00;
-}
-
-.wordpress {
-	color: #21759b;
-}
-
-.youtube {
-	color: #bb0000;
-}
-
-.github {
-	color: #171515;
-}
-
-.stack-overflow {
-	color: #828386;
-	position: relative;
-}
-
-.flickr {
-	color: #ff0084;
-}      
-
-.stack-overflow::after {
-	position: absolute;
-	left: 0;
-	content: '\f16c';
-	color: #f68a1f;
-	overflow: hidden;
-	height: 40%;
-}
-
-/******************
-*		HELPER CLASSES	
-******************/
-.fa {
-	min-width: 1.25em;
-	margin-right: 0.25em;
-	text-align: center;
-}
-
-.clear {
-	display: table;
-	clear: both;
+#summary h2 {
+  display: none;
 }
 
 
-/****************
-*		TABLET
-****************/
-@media screen and (min-width: 602px) { 
-	
-	#resume {
-		width: 550px;
-		margin: 0 auto;
-	}
-	section > header > h3 {
-		float:left;
-	}
-	section > header > .date {
-		float: right;
-		line-height: 1.3;
-	}
-
+.label-keyword {
+  display: inline-block;
+  background: #e8f4ff;
+  color: black;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
+  border-radius: 5px;
+  margin-top: 2px;
+  font-weight: bold;
+  text-align: center;
 }
 
-
-/****************
-*		LAPTOP	
-****************/
-@media screen and (min-width: 1025px) { 
-	
-	#resume {
-		width: 650px;		
-		padding: 3em;
-		margin: 3em auto;
-		background: #fff;
-		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-	}
-
-	.section {
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-flow: row wrap;
-		flex-flow: row wrap;
-		-webkit-justify-content: space-between;
-		justify-content: space-between;
-		margin-bottom: 1em;
-		margin-top: 1em;
-		border-bottom: 1px solid #eee;
-	}
-
-	.section:last-of-type {
-		border-bottom: none;
-		margin-bottom: 0;
-	}
-
-	section > header {
-		line-height: 1;
-		padding-bottom: 1em; 
-	}
-
-	h2.section-title {
-		line-height: 1.1;
-		padding-top: 0;
-	}
-
-	section:not(.section) {
-		width: 34.5em;
-		padding: 0 1em 1em 0;
-		margin-top:0;
-		border: none;
-	}
-
-	section p {
-		margin: 0;
-	}
-
-	section#basics {
-		width: auto;
-		padding-top: 1em;
-		padding-left: 1em;
-		padding-bottom: 0;
-		border-top: 1px solid #eee;
-		border-bottom: 1px solid #eee;
-	}
-
-	#profiles .item{
-		padding-bottom: 1em;
-	}
-
-	div {
-		padding: 0;
-	}
-
-	#skills .item {
-		padding-left:0;
-		margin-top: 0;
-	}
-
-	div.item {
-		margin-top: 0;
-		border-bottom: 1px solid #eee;
-	}
-
+.notes {
+  font-size: 10px;
+  display: block;
+  font-weight: normal;
+  text-transform: uppercase;
 }
-	</style>
-	
 
-	<body>
-		<div id="resume">
-				<header id="header">
-						<img src="jane.png" alt="Jane Q. Fullstacker"/>
-						<div class="middle">
-							<h1 class="name">Jane Q. Fullstacker</h1>
-							<h2 class="label">Senior Developer</h2>
-						</div>
+.card-skills {
+    position: relative;
+}
+.card-nested {
+    min-height: 0;
+    margin-bottom: 10px;
+    border-width: 1px 0 0 0;
+}
+.card {
+    background: #FFF;
+    border-radius: 3px;
+    padding: 10px;
+}
 
-				</header>
-				
-				<section id="basics">
-					
+.skill-level {
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 10px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.skill-level .skill-progress {
+  position: absolute;
+  border-radius: 3px;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: height 1s ease;
+}
+.skill-level .skill-progress.beginner {
+  height: 50%;
+  background: #e74c3c;
+}
+.skill-level .skill-progress.intermediate {
+  height: 70%;
+  background: #f1c40f;
+}
+.skill-level .skill-progress.advanced {
+  height: 80%;
+  background: #428bca;
+}
+.skill-level .skill-progress.master {
+  height: 95%;
+  background: #5cb85c;
+}
+.skill-info {
+  margin-left: 10px;
+}
+@media (max-width: 480px) {
+  .skill-info {
+    margin-left: 20px;
+  }
+}
+.skill-info > strong {
+  font-weight: 400;
+  font-size: 24px;
+  color: #1d1d1d;
+  line-height: 24px;
+}
 
-					<div id="contact">
-						<div class="website">
-							<a href="https://www.janeblogs.com">https://www.janeblogs.com</a>
-						</div>
-						<div class="email">
-							<span class="fa fa-envelope"></span>
-							<a href="mailto:jdoe@onecoolstartup.io">jdoe@onecoolstartup.io</a>
-						</div>
-						<div class="phone">
-							<span class="fa fa-phone-square"></span>
-							1-650-999-7777
-						</div>
-					</div>
-				
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
 
-					<div id="profiles">
-						<div class="item">
-							<span class="network fa fa-github github"></span>
-							<span class="username">
-								<span class="url">
-									<a href="https://github.com/janeq-was-here">janeq-was-here</a>
-								</span>
-							</span>
-						</div>
-						<div class="item">
-							<span class="network fa fa-twitter twitter"></span>
-							<span class="username">
-								<span class="url">
-									<a href="https://twitter.com/janeq-was-here">janeq-was-here</a>
-								</span>
-							</span>
-						</div>
-					</div>
-				</section>
+.card-skills {
+  position: relative;
+}
 
-				<section class="section main-summary">
-					<h2 class='section-title'>About</h2>
-					<section>
-						<p><strong>Imaginary full-stack software developer with 6+ years industry experience</strong> specializing in cloud-driven web applications and middleware. A native of southern CA, Jane enjoys hiking, mystery novels, and the company of Rufus, her two year old beagle.</p>
-					</section>
-				</section>
+.space-top {
+    margin-top: 5px;
+}
 
-				</section>
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-				<section class="section">
-					<h2 class='section-title'>Experience</h2>
-					<section id="work">
-						<header>
-							<h3 class="name">
-								Area 52
-							</h3>
-							<div class="date">
-								<span class="startDate">
-									September 2013
-								</span>
-								<span class="endDate">
-									- Present
-								</span>
-							</div>
-						</header>
-						<div class="item">
-						<div class="position">
-							Head Code Ninja
-						</div>
-						<div class="website">
-							<a href="https://area52.io/does-not-exist">https://area52.io/does-not-exist</a>
-						</div>
-						<div class="summary">
-							<p>Development team manager for <a href="https://en.wikipedia.org/wiki/Vaporware"><strong>Quantum Diorama</strong></a>, a distributed molecular modeling and analysis suite for Linux and OS X.</p>
-						</div>
-						<ul class="highlights">
-							<li>Managed a 5-person development team</li>
-							<li>Accomplishment 2</li>
-							<li>Etc.</li>
-						</ul>
-					</div>
-						<header>
-							<h3 class="name">
-								Veridian Dynamics
-							</h3>
-							<div class="date">
-								<span class="startDate">
-									July 2011
-								</span>
-								<span class="endDate">
-									- August 2013
-								</span>
-							</div>
-						</header>
-						<div class="item">
-						<div class="position">
-							Principal Developer
-						</div>
-						<div class="website">
-							<a href="https://en.wikipedia.org/wiki/Better_Off_Ted#Plot">https://en.wikipedia.org/wiki/Better_Off_Ted#Plot</a>
-						</div>
-						<div class="summary">
-							<p>Developer on numerous projects culminating in technical lead role for the <a href="http://betteroffted.wikia.com/wiki/Jabberwocky">Jabberwocky project</a> and promotion to principal developer.</p>
-						</div>
-						<ul class="highlights">
-							<li>Managed a 5-person development team</li>
-							<li>Accomplishment 2</li>
-							<li>Etc.</li>
-						</ul>
-					</div>
-						<header>
-							<h3 class="name">
-								Stark Industries
-							</h3>
-							<div class="date">
-								<span class="startDate">
-									October 2008
-								</span>
-								<span class="endDate">
-									- June 2011
-								</span>
-							</div>
-						</header>
-						<div class="item">
-						<div class="position">
-							IT Administrator
-						</div>
-						<div class="summary">
-							<p>Junior programmer with heavy code responsibilities. Promoted to intermediate role after 6 months.</p>
-						</div>
-						<ul class="highlights">
-							<li>Promoted to intermediate developer after 6 months</li>
-							<li>Accomplishment 2</li>
-							<li>Etc.</li>
-						</ul>
-					</div>
-						<header>
-							<h3 class="name">
-								Dunder Mifflin
-							</h3>
-							<div class="date">
-								<span class="startDate">
-									June 2008
-								</span>
-								<span class="endDate">
-									- September 2008
-								</span>
-							</div>
-						</header>
-						<div class="item">
-						<div class="position">
-							Intern
-						</div>
-						<div class="summary">
-							<p>Performed IT administration and deployments for Dunder Mifflin.</p>
-						</div>
-						<ul class="highlights">
-							<li>Supervised roll-out of Dunder Mifflin Infinity website.</li>
-							<li>Performed mission-critical system backups and </li>
-							<li>Etc.</li>
-						</ul>
-					</div>
-					</section>
-				</section>
-		
-				<section class="section">
-					<h2 class='section-title'>Education</h2>
-					<section id="education">
-							<header>
-									<h3 class="institution">
-										Cornell University
-									</h3>
-								<div class="date">
-									<span class="startDate">
-										2005
-									</span>
-									<span class="endDate">
-										- 2008
-									</span>
-								</div>
-							</header>
-							<div class="item">
-									<div>
-										<span class="fa fa-graduation-cap"></span>
-										<span class='gpa'> GPA: 3.5</span>
-									</div>
-									<ul class="courses">
-										<li>Course 1</li>
-										<li>Course 2</li>
-										<li>Course 2</li>
-									</ul>
-							</div>
-							<header>
-									<h3 class="institution">
-										Medfield College
-									</h3>
-								<div class="date">
-									<span class="startDate">
-										2003
-									</span>
-									<span class="endDate">
-										- 2005
-									</span>
-								</div>
-							</header>
-							<div class="item">
-									<div>
-										<span class="fa fa-graduation-cap"></span>
-										<span class='gpa'> GPA: 3.2</span>
-									</div>
-									<ul class="courses">
-										<li>Course 1</li>
-										<li>Course 2</li>
-										<li>Course 2</li>
-									</ul>
-							</div>
-					</section>
-				</section>
-		
-			
-				<section class="section">
-					<h2 class='section-title'>Volunteer</h2>
-					<section id="volunteer">
-								<header>
-									<h3 class="company">
-										Technology for Tots
-									</h3>
-									<div class="date">
-										<span class="startDate">
-											November 2003
-										</span>
-										<span class="endDate">
-											- June 2005
-										</span>
-								</header>
-							<div class="item">
-							<div class="position">
-								Technical Consultant
-							</div>
-							<div class="website">
-								<a href="http://technology-for-tots.org">http://technology-for-tots.org</a>
-							</div>
-							<div class="summary">
-								<p>Summary of this volunteer stint.</p>
-							</div>
-							<ul class="highlights">
-								<li>Accomplishment 1</li>
-								<li>Accomplishment 2</li>
-								<li>etc</li>
-							</ul>
-						</div>
-								<header>
-									<h3 class="company">
-										US Army Reserves
-									</h3>
-									<div class="date">
-										<span class="startDate">
-											November 1999
-										</span>
-										<span class="endDate">
-											- June 2003
-										</span>
-								</header>
-							<div class="item">
-							<div class="position">
-								NCO
-							</div>
-							<div class="website">
-								<a href="http://www.usar.army.mil/">http://www.usar.army.mil/</a>
-							</div>
-							<div class="summary">
-								<p>Summary of this military stint.</p>
-							</div>
-							<ul class="highlights">
-								<li>Accomplishment 1</li>
-								<li>Accomplishment 2</li>
-								<li>etc</li>
-							</ul>
-						</div>
-					</section>
-				</section>
+#elevator-pitch {
+  text-align: center;
+  font-size: 24px;
+  color: #BFC1C3;
+  text-transform: uppercase;
+  font-weight: normal;
+}
 
-				<section class="section">
-					<h2 class='section-title'>Awards</h2>
-					<section id="awards">
-						<div class="date">
-							31 December 2011
-						</div>
-						<div class="item">
-							<div class="title">
-								Honorable Mention
-							</div>
-							<div class="awarder">
-								Google
-							</div>
-						</div>
-						<div class="date">
-							31 December 2011
-						</div>
-						<div class="item">
-							<div class="title">
-								Summa cum laude
-							</div>
-							<div class="awarder">
-								Cornell University
-							</div>
-						</div>
-					</section>
-				</section>
-		
-				<section class="section">
-					<h2 class='section-title'>Publications</h2>
-					<section id="publications">
-							<div class="item">
-								<span class="name">
-									<span class="website">
-										<a href="http://codeproject.com/build-ui-electron-atom.aspx">Building User Interfaces with Electron and Atom</a>
-									</span>
-								</span>
-									<span class="publisher">
-										in Code Project,
-									</span>
-									<span class="date">
-										31 December 2010
-									</span>
-							</div>
-							<div class="item">
-								<span class="name">
-									<span class="website">
-										<a href="https://www.janeblogs.com">Jane Fullstacker&#x27;s Blog</a>
-									</span>
-								</span>
-									<span class="publisher">
-										in self,
-									</span>
-									<span class="date">
-										31 December 2010
-									</span>
-							</div>
-							<div class="item">
-								<span class="name">
-									<span class="website">
-										<a href="http://url.to.publication.com/blah">Teach Yourself GORFF in 21 Days</a>
-									</span>
-								</span>
-									<span class="publisher">
-										in Amazon,
-									</span>
-									<span class="date">
-										31 December 2007
-									</span>
-								<div class="summary">
-									<p>A primer on the programming language of GORFF, whose for loops are coterminous with all of time and space.</p>
-								</div>
-							</div>
-					</section>
-				</section>
-		
-				<section class="section">
-					<h2 class='section-title'>Skills</h2>
-					<section id="skills">
-						<div class="item">
-							<div class="name">
-								Web
-							</div>
-							<div class="level advanced">
-								<em>advanced</em>
-								<div class="bar"></div>
-							</div>
-							<ul class="keywords">
-								<li>JavaScript</li>
-								<li>HTML 5</li>
-								<li>CSS</li>
-								<li>LAMP</li>
-								<li>MVC</li>
-								<li>REST</li>
-							</ul>
-						</div>
-						<div class="item">
-							<div class="name">
-								JavaScript
-							</div>
-							<div class="level master">
-								<em>master</em>
-								<div class="bar"></div>
-							</div>
-							<ul class="keywords">
-								<li>Node.js</li>
-								<li>Angular.js</li>
-								<li>jQuery</li>
-								<li>Bootstrap</li>
-								<li>React.js</li>
-								<li>Backbone.js</li>
-							</ul>
-						</div>
-						<div class="item">
-							<div class="name">
-								Database
-							</div>
-							<div class="level intermediate">
-								<em>intermediate</em>
-								<div class="bar"></div>
-							</div>
-							<ul class="keywords">
-								<li>MySQL</li>
-								<li>PostgreSQL</li>
-								<li>NoSQL</li>
-								<li>ORM</li>
-								<li>Hibernate</li>
-							</ul>
-						</div>
-						<div class="item">
-							<div class="name">
-								Cloud
-							</div>
-							<div class="level intermediate">
-								<em>intermediate</em>
-								<div class="bar"></div>
-							</div>
-							<ul class="keywords">
-								<li>AWS</li>
-								<li>EC2</li>
-								<li>RDS</li>
-								<li>S3</li>
-								<li>Azure</li>
-								<li>Dropbox</li>
-							</ul>
-						</div>
-						<div class="item">
-							<div class="name">
-								Project
-							</div>
-							<div class="level beginner">
-								<em>beginner</em>
-								<div class="bar"></div>
-							</div>
-							<ul class="keywords">
-								<li>Agile</li>
-								<li>TFS</li>
-								<li>JIRA</li>
-								<li>GitHub</li>
-								<li>Unified Process</li>
-								<li>MS Project</li>
-							</ul>
-						</div>
-					</section>
-				</section>
+.res-label {
+  font-style: italic;
+}
+</style>
 
-				<section class="section">
-					<h2 class='section-title'>Languages</h2>
-					<section id="languages">
-						<div class="item">
-							<div class="language">
-								English
-							</div>
-						</div>
-						<div class="item">
-							<div class="language">
-								Spanish
-							</div>
-						</div>
-					</section>
-				</section>
 
-				<section class="section">
-					<h2 class='section-title' class='section-title'>Interests</h2>
-					<section id="interests">
-						<div class="item">
-							<div class="name">
-								reading
-							</div>
-							<ul class="keywords">
-								<li>mystery</li>
-								<li>Agatha Christie</li>
-								<li>John Grisham</li>
-							</ul>
-						</div>
-						<div class="item">
-							<div class="name">
-								hiking
-							</div>
-						</div>
-						<div class="item">
-							<div class="name">
-								yoga
-							</div>
-						</div>
-					</section>
-				</section>
-		
-				<section class="section">
-					<h2 class='section-title'>References</h2>
-					<section id="references">
-						<div class="item">
-							<blockquote class="reference">
-								&#8220;&#32;Jane is awesome! I&#x27;d hire her again in a heartbeat.&#32;&#8221;
-							</blockquote>
-							<div class="name">
-								John Davidson
-							</div>
-						</div>
-						<div class="item">
-							<blockquote class="reference">
-								&#8220;&#32;I worked with Jane on Jabberwocky and can vouch for her awesome technical capabilities and attention to detail. Insta-hire.&#32;&#8221;
-							</blockquote>
-							<div class="name">
-								Elias Fullstacker
-							</div>
-						</div>
-						<div class="item">
-							<blockquote class="reference">
-								&#8220;&#32;I&#x27;ve known Jane personally and professionally for almost ten years. She is one in a million.&#32;&#8221;
-							</blockquote>
-							<div class="name">
-								Dana Nevins
-							</div>
-						</div>
-					</section>
-				</section>
-		</div>		
-	</body>
-	
+  </head>
+
+
+  <body>
+    <main id="main"> 
+      <div id="container">
+      <header>
+
+
+        <h1>Ivan Tarin</h1>
+
+        <div id="contact">
+          <div class="email"><a href="mailto:ivan0tarin@gmail.com">ivan0tarin@gmail.com</a></div>
+          <div class="phone">(915)929-6803</div>
+          <div class="website"><a href="http://ivantarin.com">http://ivantarin.com</a></div>
+        </div>
+      </header>
+
+
+
+
+<hr>
+<section id="summary">
+    <header>
+      <span class="fa fa-lg fa-info"></span>  <h2>info</h2>
+    </header>
+    Software developer experienced in web, database, desktop, and mobile engineering. With more than 9 years professional work experience, and with one year in the software industry delivering project work at Techtonic for other companies. I have hands on experience in backend, frontend, web, api, desktop, and mobile apps.
+</section>
+
+
+
+
+<hr>
+<section id="skills">
+  <header>
+  <h2>Skills</h2>
+  </header>
+  <span class="fa fa-lg fa-code"></span>
+  <ul class="list-unstyled">
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="intermediate to advanced" data-placement="left">
+          <div class="skill-progress intermediate to advanced"></div>
+        </div>
+        <div class="skill-info">
+          <strong>Programming Languages</strong>
+          <div class="space-top labels">
+                <div class="label label-keyword">
+                  <span class="kw">bash</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">JavaScript</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Python</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Willing to learn</span>
+                </div>
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="intermediate to advanced" data-placement="left">
+          <div class="skill-progress intermediate to advanced"></div>
+        </div>
+        <div class="skill-info">
+          <strong>Web</strong>
+          <div class="space-top labels">
+                <div class="label label-keyword">
+                  <span class="kw">JavaScript</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">HTML 5</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">CSS</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">React</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">MVC</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">REST</span>
+                </div>
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="intermediate" data-placement="left">
+          <div class="skill-progress intermediate"></div>
+        </div>
+        <div class="skill-info">
+          <strong>JavaScript</strong>
+          <div class="space-top labels">
+                <div class="label label-keyword">
+                  <span class="kw">Node.js</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Express</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">jQuery</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">AJAX</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Bootstrap</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">React.js</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">React Native</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">ES5</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">ES6</span>
+                </div>
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="intermediate" data-placement="left">
+          <div class="skill-progress intermediate"></div>
+        </div>
+        <div class="skill-info">
+          <strong>node.js</strong>
+          <div class="space-top labels">
+                <div class="label label-keyword">
+                  <span class="kw">node file system</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">async</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">express, mongoose, mongoDB</span>
+                </div>
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="intermediate" data-placement="left">
+          <div class="skill-progress intermediate"></div>
+        </div>
+        <div class="skill-info">
+          <strong>Python</strong>
+          <div class="space-top labels">
+                <div class="label label-keyword">
+                  <span class="kw"> BeautifulSoup for web scraping and parsing HTML web pages</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Jupyter Notebooks</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">pandas</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">matplotlib</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">scipy</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Pip3</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">pipenv </span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">django</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">JetBrains</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">PyCharm</span>
+                </div>
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="bigginer" data-placement="left">
+          <div class="skill-progress bigginer"></div>
+        </div>
+        <div class="skill-info">
+          <strong>Java</strong>
+          <div class="space-top labels">
+                <div class="label label-keyword">
+                  <span class="kw">Intro college course</span>
+                </div>
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="intermediate" data-placement="left">
+          <div class="skill-progress intermediate"></div>
+        </div>
+        <div class="skill-info">
+          <strong>Database</strong>
+          <div class="space-top labels">
+                <div class="label label-keyword">
+                  <span class="kw">SQL</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">SQLite</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">MySQL</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">PostgreSQL</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">SOQL</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Mongoose</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">SOQL</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">NoSQL and Document Stores</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">ORM</span>
+                </div>
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="intermediate" data-placement="left">
+          <div class="skill-progress intermediate"></div>
+        </div>
+        <div class="skill-info">
+          <strong>Cloud</strong>
+          <div class="space-top labels">
+                <div class="label label-keyword">
+                  <span class="kw">AWS</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Google Cloud</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Pivotal</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">S3</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">IBM Object Storage</span>
+                </div>
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="Itermediate to begginer" data-placement="left">
+          <div class="skill-progress itermediate to begginer"></div>
+        </div>
+        <div class="skill-info">
+          <strong>Deployment</strong>
+          <div class="space-top labels">
+                <div class="label label-keyword">
+                  <span class="kw">AWS</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">S3</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Lambda</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Cloud</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Heroku</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Pivotal</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Google Cloud</span>
+                </div>
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="Bigginer to Intermediate" data-placement="left">
+          <div class="skill-progress bigginer to intermediate"></div>
+        </div>
+        <div class="skill-info">
+          <strong>Development Environments</strong>
+          <div class="space-top labels">
+                <div class="label label-keyword">
+                  <span class="kw">Unix</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Linux</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Bash</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Microsoft command prompt</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">vim</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">nano</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">command line</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">virtualBox</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">VMWare</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Jupyter Notebooks</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">docker</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">VS Code</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Atom</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Sublime</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Pycharm</span>
+                </div>
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="begginner" data-placement="left">
+          <div class="skill-progress begginner"></div>
+        </div>
+        <div class="skill-info">
+          <strong>Virtual Machines</strong>
+          <div class="space-top labels">
+                <div class="label label-keyword">
+                  <span class="kw">VMWare</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Virtual Box</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Docker</span>
+                </div>
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="beginner" data-placement="left">
+          <div class="skill-progress beginner"></div>
+        </div>
+        <div class="skill-info">
+          <strong>Project</strong>
+          <div class="space-top labels">
+                <div class="label label-keyword">
+                  <span class="kw">Agile</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">JIRA</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">GitHub</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">SCRUM</span>
+                </div>
+                <div class="label label-keyword">
+                  <span class="kw">Slack</span>
+                </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+</section>
+
+
+
+
+
+
+
+
+
+
+<hr>
+<section id="employment">
+    <header>
+      <span class="fa fa-lg fa-building"></span>  <h2>employment</h2>
+    </header>
+
+<div>
+  <h3><em>Software Developer</em>,
+    <a href="https://www.techtonic.com">Techtonic</a>
+    </h3>
+    <span class="tenure">2018-02 — Present</span>
+    | <span class="keywords">Agile JavaScript Python HTML CSS React React Native Mobile SQL MySQL PostgreSQL JIRA Node </span>
+  <p><p>I am a Junior Developer at Techtonic a software company where we deliver solutions tailored to our clients such as web apps, databases, cloud service, ios/android mobile apps, and more.</p>
+</p>
+  <ul>
+    <li>In a two person team I assisted in building a full desktop application with Electron that integrated the user’s folder system and synced with a cloud server for one of our clients.Assisted in UI modifications to GIS map that used Ubisense MyWorld for another client.</li>
+    <li>Moved machine learning categorization and classification, and reporting, to an API model</li>
+    <li>In a two person team I assisted in building a full desktop application with Electron, Node, IBMCloud Object Storage that synced the user’s folder system with a private cloud server.</li>
+    <li>Assisted in extracting database from SalesForce and I helped research and create demo of a backend to query their SF database objects.</li>
+    <li>Contributed to a large legacy Ubuntu web app that has been around for several decades by implement extracting vital data from their MySQL database and made UI changes that helped create a new report.</li>
+    <li>Currently, assisting in a react-native application to modify the UI, prepare API entry points, and update the redux store.</li>
+  </ul>
+</div>
+<div>
+  <h3><em>Paralegal, Office Clerk, Book keeping</em>,
+    <a href="http://www.jbakerlawgroup.com/">Baker Law Group</a>
+    </h3>
+    <span class="tenure">2017-07 — 2017-11</span>
+    | <span class="keywords">Quickbooks Microsoft Office Excel </span>
+  <p><p>Provided all around support for Elder Law Attorneys</p>
+</p>
+  <ul>
+    <li>Draft and file pleadings into Colorado Courts Electronic Filing System</li>
+    <li>Preparing invoices on Quickbooks and other accounting clerk work</li>
+    <li>Prepare legal correspondence </li>
+    <li>Answer the phone and address questions from clients and potential client</li>
+    <li>Organize and create files</li>
+    <li>Purchase Office Supplies</li>
+  </ul>
+</div>
+<div>
+  <h3><em>Paralegal</em>,
+    <a href="https://www.coloradolegalservices.org/">Colorado Legal Services</a>
+    </h3>
+    <span class="tenure">2016-10 — 2017-06</span>
+    | <span class="keywords">Microsoft Office Excel Various Legal reference books </span>
+  <p><p>Provided support for Attorney helping Human Trafficing Victims</p>
+</p>
+  <ul>
+    <li>Assisting Attorneys on diverse immigration cases for clients such T-visa for victims of Human Trafficking and U-visa for victims of crime</li>
+    <li>Prepare legal documents, Conducting legal research</li>
+    <li>Prepare affidavits or other documents, correspondence, and organize and maintain documents in paper or electronic filing system.</li>
+    <li>Tracking and preparing quarterly grant reports with the assistance of Colorado Collaborative members and with supervision of Project Director</li>
+  </ul>
+</div>
+<div>
+  <h3><em>Paralegal</em>,
+    <a href="https://www.burgsimpson.com/">BurgSimpson</a>
+    </h3>
+    <span class="tenure">2016-04 — 2017-10</span>
+    | <span class="keywords">Microsoft Office Excel Various Legal reference books </span>
+  <p><p>Performed IT administration and deployments for Dunder Mifflin.</p>
+</p>
+  <ul>
+    <li>Researching through medical records and writing medical summaries </li>
+    <li>Investigating traffic accidents</li>
+    <li>Writing demands to insurance companies to recover clients losses so they can be ‘made whole’</li>
+    <li>Dealing with medical providers, subrogation, and insurance companies</li>
+    <li>Assisting attorneys with client intakes</li>
+    <li>Filing, organizing and ordering medical records, and other documents</li>
+    <li>Managing several cases and updating case management software</li>
+  </ul>
+</div>
+<div>
+  <h3><em>Paralegal</em>,
+    <a href="http://www.trla.org/">Texas Rio Grande Legal Aid </a>
+    </h3>
+    <span class="tenure">2013-10 — 2016-02</span>
+    | <span class="keywords">Social Security Microsoft Office Various Legal reference books </span>
+  <p><p>Performed IT administration and deployments for Dunder Mifflin.</p>
+</p>
+  <ul>
+    <li>Prepare and present Retirement Disability(Title II) and Supplemental Security Income(Title XVI) cases to an Administrative Law Judge</li>
+    <li>Research cases through hundreds pages in medical records</li>
+    <li>Write briefs to persuade Administrative Law Judges</li>
+    <li>Advocate for homeless individuals and families from youth to advanced age.</li>
+    <li>Research laws, medical conditions, and anything else that clients might need.</li>
+    <li>Have an active caseload of clients from varying demographic areas and problems.</li>
+  </ul>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<section id="education">
+    <header>
+      <span class="fa fa-lg fa-mortar-board"></span>  <h2>education</h2>
+    </header>
+<div>
+<h3><em>Software apprenticeship</em>,
+<a href="https://www.techtonic.com/">Techtonic Academy</a>
+</h3>
+<span class="tenure">2005-09 — 2018-08</span>
+| <span class="keywords">Discrete Math Liner Algebra Matrix Algebra Calculus I, II , III </span>
+<p>Full software development course and paid work experience.</p>
+
+</div>
+<div>
+<h3><em>Bachelors</em>,
+<a href="https://www.utep.edu/">University of Texas at El Paso</a>
+</h3>
+<span class="tenure">2003-01 — 2012-01</span>
+| <span class="keywords">Course 1 Course 2 Course 2 </span>
+<p>Math | Fine Art</p>
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<section id="service">
+    <header>
+      <span class="fa fa-lg fa-child"></span>  <h2>service</h2>
+    </header>
+    <div>
+    <h3><em>Volunteer in Service to America</em>,
+      <a href="https://www.nationalservice.gov/programs/americorps">AmeriCorps</a>
+    </h3>
+    <span class="tenure">2010-08 — 2012-01</span>
+    <p><p>Summary of this volunteer stint.</p>
+</p>
+    <ul>
+      <li>Helped manage a free tax preparation center at Houchen in Segundo Barrio</li>
+      <li>Developed a marketing program for Mountain Star Federal Credit Union and El Paso Affordable Housing</li>
+      <li>Regularly taught 8-hour housing/financial workshop in English and Spanish</li>
+      <li>Developed a comic book to encourage saving money (Which won an award from the IRS)</li>
+      <li>Participated in a payday loan alternative program</li>
+      <li>Worked on Community Development Financial Institution certification</li>
+      <li>Acted as a mentor in the UTEP Gear Up program to get enroll youth at universities</li>
+    </ul>
+    </div>
+</section>
+<hr>
+<section id="reading">
+    <header>
+      <span class="fa fa-lg fa-book"></span>  <h2>reading</h2>
+    </header>
+    <div>
+    <h3><em><a href="https://www.reddit.com/">r/programming</a></em></h3>
+      <span class="tenure">Current</span>
+      <p>Daily reader and longtime lurker.</p>
+
+    </div>
+    <div>
+    <h3><em><a href="https://news.ycombinator.com/">Hacker News / YCombinator</a></em></h3>
+      <span class="tenure">Current</span>
+      <p>Daily reader and longtime lurker.</p>
+
+    </div>
+    <div>
+    <h3><em><a href="http://www.codinghorror.com">Coding Horror</a></em></h3>
+      <span class="tenure">Current</span>
+      
+    </div>
+    <div>
+    <h3><em><a href="http://www.stackoverflow.com/">Savior at times</a></em></h3>
+      <span class="tenure">Current</span>
+      <p>My &#39;desert-island&#39; software construction manual.</p>
+
+    </div>
+    <div>
+    <h3><em><a href="http://www.medium.com/">Good industry and how to articles.</a></em></h3>
+      <span class="tenure">Current</span>
+      <p>My &#39;desert-island&#39; software construction manual.</p>
+
+    </div>
+</section>
+<hr>
+<section id="interests">
+    <header>
+      <span class="fa fa-lg fa-bicycle"></span>  <h2>interests</h2>
+    </header>
+    <div>
+    <h3><em>Coding</em></h3>
+    <span class="tenure">Current</span>
+    <p>I love to keep learning, machine learning and data science are very interesting to me.</p>
+
+    </div>
+    <div>
+    <h3><em>Fine Art</em></h3>
+    <span class="tenure">Current</span>
+    <p>Ivan is also a professional artist and enjoys making fine art</p>
+
+    </div>
+    <div>
+    <h3><em>Video games</em></h3>
+    <span class="tenure">Current</span>
+    <p>Will sometimes play a game or two.</p>
+
+    </div>
+    <div>
+    <h3><em>Family and dog</em></h3>
+    <span class="tenure">Current</span>
+    <p>Wife, incoming baby, adopted mixed doberman.</p>
+
+    </div>
+</section>
+
+      </div>
+    </main>
+  </body>
 </html>

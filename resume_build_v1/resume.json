@@ -1,303 +1,330 @@
 {
-  "name": "Jane Q. Fullstacker",
-  "info": {
-    "label": "Senior Developer",
-    "image": "jane.png",
-    "brief": "**Imaginary full-stack software developer with 6+ years industry experience** specializing in cloud-driven web applications and middleware. A native of southern CA, Jane enjoys hiking, mystery novels, and the company of Rufus, her two year old beagle."
-  },
-  "contact": {
-    "email": "jdoe@onecoolstartup.io",
-    "phone": "1-650-999-7777",
-    "website": "https://www.janeblogs.com",
+  "basics": {
+    "label": "Software Developer",
+    "characterClass": "Programmer",
+    "quote": "The most difficult problems in life are insoluable, they cannot be solved only overcome.",
+    "website": "http://ivantarin.com",
+    "phone": "(915)929-6803",
+    "email": "ivan0tarin@gmail.com",
     "other": [
-      {
-        "label": "Home Phone",
-        "flavor": "phone",
-        "value": "1-650-999-4321"
-      },
-      {
-        "label": "Work Phone",
-        "flavor": "phone",
-        "value": "1-650-777-1234"
-      },
       {
         "label": "Personal Email",
         "flavor": "email",
-        "value": "jane@janeblogs.com"
+        "value": "ivan0tarin@gmail.com"
+      }
+    ],
+    "name": "Ivan Tarin",
+    "summary": "Software developer experienced in web, database, desktop, and mobile engineering. With more than 9 years professional work experience, and with one year in the software industry delivering project work at Techtonic for other companies. I have hands on experience in backend, frontend, web, api, desktop, and mobile apps.",
+    "picture": "git_profile_pic.png",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "everythingeverywhere",
+        "url": "https://github.com/everythingeverywhere"
+      },
+      {
+        "network": "Github",
+        "username": "itarin",
+        "url": "https://github.com/itarin"
       }
     ]
   },
-  "meta": {
-    "format": "FRESH@^1.0.0-beta",
-    "modified": "2019-02-08T06:05:25.635Z"
-  },
-  "employment": {
-    "history": [
-      {
-        "position": "Head Code Ninja",
-        "employer": "Area 52",
-        "summary": "Development team manager for [**Quantum Diorama**](https://en.wikipedia.org/wiki/Vaporware), a distributed molecular modeling and analysis suite for Linux and OS X.",
-        "current": true,
-        "start": "2013-09",
-        "url": "https://area52.io/does-not-exist",
-        "keywords": [],
-        "highlights": [
-          "Managed a 5-person development team",
-          "Accomplishment 2",
-          "Etc."
-        ]
-      },
-      {
-        "position": "Principal Developer",
-        "employer": "Veridian Dynamics",
-        "summary": "Developer on numerous projects culminating in technical lead role for the [Jabberwocky project](http://betteroffted.wikia.com/wiki/Jabberwocky) and promotion to principal developer.",
-        "start": "2011-07",
-        "end": "2013-08",
-        "url": "https://en.wikipedia.org/wiki/Better_Off_Ted#Plot",
-        "keywords": [],
-        "highlights": [
-          "Managed a 5-person development team",
-          "Accomplishment 2",
-          "Etc."
-        ]
-      },
-      {
-        "position": "IT Administrator",
-        "employer": "Stark Industries",
-        "summary": "Junior programmer with heavy code responsibilities. Promoted to intermediate role after 6 months.",
-        "start": "2008-10",
-        "end": "2011-06",
-        "keywords": [],
-        "highlights": [
-          "Promoted to intermediate developer after 6 months",
-          "Accomplishment 2",
-          "Etc."
-        ]
-      },
-      {
-        "position": "Intern",
-        "employer": "Dunder Mifflin",
-        "summary": "Performed IT administration and deployments for Dunder Mifflin.",
-        "start": "2008-06",
-        "end": "2008-09",
-        "keywords": [],
-        "highlights": [
-          "Supervised roll-out of Dunder Mifflin Infinity website.",
-          "Performed mission-critical system backups and ",
-          "Etc."
-        ]
-      }
-    ]
-  },
-  "education": {
-    "level": "",
-    "history": [
-      {
-        "institution": "Cornell University",
-        "start": "2005-09",
-        "end": "2008-05",
-        "grade": "3.5",
-        "curriculum": [
-          "Course 1",
-          "Course 2",
-          "Course 2"
-        ],
-        "summary": ""
-      },
-      {
-        "institution": "Medfield College",
-        "start": "2003-09",
-        "end": "2005-06",
-        "grade": "3.2",
-        "curriculum": [
-          "Course 1",
-          "Course 2",
-          "Course 2"
-        ],
-        "summary": ""
-      }
-    ]
-  },
-  "service": {
-    "history": [
-      {
-        "type": "volunteer",
-        "position": "Technical Consultant",
-        "organization": "Technology for Tots",
-        "start": "2003-11",
-        "end": "2005-06",
-        "url": "http://technology-for-tots.org",
-        "summary": "Summary of this volunteer stint.",
-        "highlights": [
-          "Accomplishment 1",
-          "Accomplishment 2",
-          "etc"
-        ]
-      },
-      {
-        "type": "volunteer",
-        "position": "NCO",
-        "organization": "US Army Reserves",
-        "start": "1999-11",
-        "end": "2003-06",
-        "url": "http://www.usar.army.mil/",
-        "summary": "Summary of this military stint.",
-        "highlights": [
-          "Accomplishment 1",
-          "Accomplishment 2",
-          "etc"
-        ]
-      }
-    ]
-  },
-  "skills": {
-    "sets": [
-      {
-        "name": "Web",
-        "level": "advanced",
-        "skills": [
-          "JavaScript",
-          "HTML 5",
-          "CSS",
-          "LAMP",
-          "MVC",
-          "REST"
-        ]
-      },
-      {
-        "name": "JavaScript",
-        "level": "master",
-        "skills": [
-          "Node.js",
-          "Angular.js",
-          "jQuery",
-          "Bootstrap",
-          "React.js",
-          "Backbone.js"
-        ]
-      },
-      {
-        "name": "Database",
-        "level": "intermediate",
-        "skills": [
-          "MySQL",
-          "PostgreSQL",
-          "NoSQL",
-          "ORM",
-          "Hibernate"
-        ]
-      },
-      {
-        "name": "Cloud",
-        "level": "intermediate",
-        "skills": [
-          "AWS",
-          "EC2",
-          "RDS",
-          "S3",
-          "Azure",
-          "Dropbox"
-        ]
-      },
-      {
-        "name": "Project",
-        "level": "beginner",
-        "skills": [
-          "Agile",
-          "TFS",
-          "JIRA",
-          "GitHub",
-          "Unified Process",
-          "MS Project"
-        ]
-      }
-    ]
-  },
-  "writing": [
+  "work": [
     {
-      "title": "Building User Interfaces with Electron and Atom",
-      "publisher": "Code Project",
-      "url": "http://codeproject.com/build-ui-electron-atom.aspx",
-      "date": "2011"
+      "company": "Techtonic",
+      "website": "https://www.techtonic.com",
+      "position": "Software Developer",
+      "startDate": "2018-02",
+      "summary": "I am a Junior Developer at Techtonic a software company where we deliver solutions tailored to our clients such as web apps, databases, cloud service, ios/android mobile apps, and more.",
+      "highlights": [
+        "In a two person team I assisted in building a full desktop application with Electron that integrated the user’s folder system and synced with a cloud server for one of our clients.Assisted in UI modifications to GIS map that used Ubisense MyWorld for another client.",
+        "Moved machine learning categorization and classification, and reporting, to an API model",
+        "In a two person team I assisted in building a full desktop application with Electron, Node, IBMCloud Object Storage that synced the user’s folder system with a private cloud server.",
+        "Assisted in extracting database from SalesForce and I helped research and create demo of a backend to query their SF database objects.",
+        "Contributed to a large legacy Ubuntu web app that has been around for several decades by implement extracting vital data from their MySQL database and made UI changes that helped create a new report.",
+        "Currently, assisting in a react-native application to modify the UI, prepare API entry points, and update the redux store."
+      ]
     },
     {
-      "title": "Jane Fullstacker's Blog",
-      "publisher": "self",
-      "url": "https://www.janeblogs.com",
-      "date": "2011"
+      "company": "Baker Law Group",
+      "website": "http://www.jbakerlawgroup.com/",
+      "position": "Paralegal, Office Clerk, Book keeping",
+      "startDate": "2017-07",
+      "endDate": "2017-11",
+      "summary": "Provided all around support for Elder Law Attorneys",
+      "highlights": [
+        "Draft and file pleadings into Colorado Courts Electronic Filing System",
+        "Preparing invoices on Quickbooks and other accounting clerk work",
+        "Prepare legal correspondence ",
+        "Answer the phone and address questions from clients and potential client",
+        "Organize and create files",
+        "Purchase Office Supplies"
+      ]
     },
     {
-      "title": "Teach Yourself GORFF in 21 Days",
-      "publisher": "Amazon",
-      "url": "http://url.to.publication.com/blah",
-      "date": "2008",
-      "summary": "A primer on the programming language of GORFF, whose for loops are coterminous with all of time and space."
+      "company": "Colorado Legal Services",
+      "website": "https://www.coloradolegalservices.org/",
+      "position": "Paralegal",
+      "startDate": "2016-10",
+      "endDate": "2017-06",
+      "summary": "Provided support for Attorney helping Human Trafficing Victims",
+      "highlights": [
+        "Assisting Attorneys on diverse immigration cases for clients such T-visa for victims of Human Trafficking and U-visa for victims of crime",
+        "Prepare legal documents, Conducting legal research",
+        "Prepare affidavits or other documents, correspondence, and organize and maintain documents in paper or electronic filing system.",
+        "Tracking and preparing quarterly grant reports with the assistance of Colorado Collaborative members and with supervision of Project Director"
+      ]
+    },
+    {
+      "company": "BurgSimpson",
+      "website": "https://www.burgsimpson.com/",
+      "position": "Paralegal",
+      "startDate": "2016-4",
+      "endDate": "2017-10",
+      "summary": "Performed IT administration and deployments for Dunder Mifflin.",
+      "highlights": [
+        "Researching through medical records and writing medical summaries ",
+        "Investigating traffic accidents",
+        "Writing demands to insurance companies to recover clients losses so they can be ‘made whole’",
+        "Dealing with medical providers, subrogation, and insurance companies",
+        "Assisting attorneys with client intakes",
+        "Filing, organizing and ordering medical records, and other documents",
+        "Managing several cases and updating case management software"
+      ]
+    },
+    {
+      "company": "Texas Rio Grande Legal Aid ",
+      "website": "http://www.trla.org/",
+      "position": "Paralegal",
+      "startDate": "2013-10",
+      "endDate": "2016-02",
+      "summary": "Performed IT administration and deployments for Dunder Mifflin.",
+      "highlights": [
+        "Prepare and present Retirement Disability(Title II) and Supplemental Security Income(Title XVI) cases to an Administrative Law Judge",
+        "Research cases through hundreds pages in medical records",
+        "Write briefs to persuade Administrative Law Judges",
+        "Advocate for homeless individuals and families from youth to advanced age.",
+        "Research laws, medical conditions, and anything else that clients might need.",
+        "Have an active caseload of clients from varying demographic areas and problems."
+      ]
     }
   ],
-  "recognition": [
+  "education": [
     {
-      "flavor": "award",
-      "title": "Honorable Mention",
-      "date": "2012",
-      "from": "Google"
+      "institution": "Techtonic Academy",
+      "gpa": "3.5",
+      "courses": [
+        "Discrete Math",
+        "Liner Algebra",
+        "Matrix Algebra",
+        "Calculus I, II , III"
+      ],
+      "startDate": "2005-09",
+      "endDate": "2018-08"
     },
     {
-      "flavor": "honor",
-      "title": "Summa cum laude",
-      "date": "2012",
-      "from": "Cornell University"
+      "institution": "University of Texas at El Paso",
+      "courses": [
+        "Course 1",
+        "Course 2",
+        "Course 2"
+      ],
+      "startDate": "2003",
+      "endDate": "2012"
     }
   ],
-  "social": [
+  "skills": [
     {
-      "label": "GitHub",
-      "network": "GitHub",
-      "url": "https://github.com/janeq-was-here",
-      "user": "janeq-was-here"
+      "name": "Programming Languages",
+      "level": "intermediate to advanced",
+      "keywords": [
+        "bash",
+        "JavaScript",
+        "Python",
+        "Willing to learn"
+      ]
     },
     {
-      "label": "Twitter",
-      "network": "Twitter",
-      "url": "https://twitter.com/janeq-was-here",
-      "user": "janeq-was-here"
+      "name": "Web",
+      "level": "intermediate to advanced",
+      "keywords": [
+        "JavaScript",
+        "HTML 5",
+        "CSS",
+        "React",
+        "MVC",
+        "REST"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "intermediate",
+      "keywords": [
+        "Node.js",
+        "Express",
+        "jQuery",
+        "AJAX",
+        "Bootstrap",
+        "React.js",
+        "React Native",
+        "ES5",
+        "ES6"
+      ]
+    },
+    {
+      "name": "node.js",
+      "level": "intermediate",
+      "keywords": [
+        "node file system",
+        "async",
+        "express, mongoose, mongoDB"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "intermediate",
+      "keywords": [
+        " BeautifulSoup for web scraping and parsing HTML web pages",
+        "Jupyter Notebooks",
+        "pandas",
+        "matplotlib",
+        "scipy",
+        "Pip3",
+        "pipenv ",
+        "django",
+        "JetBrains",
+        "PyCharm"
+      ]
+    },
+    {
+      "name": "Java",
+      "level": "bigginer",
+      "keywords": [
+        "Intro college course"
+      ]
+    },
+    {
+      "name": "Database",
+      "level": "intermediate",
+      "keywords": [
+        "SQL",
+        "SQLite",
+        "MySQL",
+        "PostgreSQL",
+        "SOQL",
+        "Mongoose",
+        "SOQL",
+        "NoSQL and Document Stores",
+        "ORM"
+      ]
+    },
+    {
+      "name": "Cloud",
+      "level": "intermediate",
+      "keywords": [
+        "AWS",
+        "Google Cloud",
+        "Pivotal",
+        "S3",
+        "IBM Object Storage"
+      ]
+    },
+    {
+      "name": "Deployment",
+      "level": "Itermediate to begginer",
+      "keywords": [
+        "AWS",
+        "S3",
+        "Lambda",
+        "Cloud",
+        "Heroku",
+        "Pivotal",
+        "Google Cloud"
+      ]
+    },
+    {
+      "name": "Development Environments",
+      "level": "Bigginer to Intermediate",
+      "keywords": [
+        "Unix",
+        "Linux",
+        "Bash",
+        "Microsoft command prompt",
+        "vim",
+        "nano",
+        "command line",
+        "virtualBox",
+        "VMWare",
+        "Jupyter Notebooks",
+        "docker",
+        "VS Code",
+        "Atom",
+        "Sublime",
+        "Pycharm"
+      ]
+    },
+    {
+      "name": "Virtual Machines",
+      "level": "begginner",
+      "keywords": [
+        "VMWare",
+        "Virtual Box",
+        "Docker"
+      ]
+    },
+    {
+      "name": "Project",
+      "level": "beginner",
+      "keywords": [
+        "Agile",
+        "JIRA",
+        "GitHub",
+        "SCRUM",
+        "Slack"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "flavor": "volunteer",
+      "organization": "AmeriCorps",
+      "position": "Volunteer in Service to America",
+      "startDate": "2010-08",
+      "endDate": "2012-01",
+      "website": "https://www.nationalservice.gov/programs/americorps",
+      "summary": "Summary of this volunteer stint.",
+      "highlights": [
+        "Helped manage a free tax preparation center at Houchen in Segundo Barrio",
+        "Developed a marketing program for Mountain Star Federal Credit Union and El Paso Affordable Housing",
+        "Regularly taught 8-hour housing/financial workshop in English and Spanish",
+        "Developed a comic book to encourage saving money (Which won an award from the IRS)",
+        "Participated in a payday loan alternative program",
+        "Worked on Community Development Financial Institution certification",
+        "Acted as a mentor in the UTEP Gear Up program to get enroll youth at universities"
+      ]
     }
   ],
   "interests": [
     {
-      "name": "reading",
-      "summary": "Jane is a fan of mystery novels and courtroom dramas including Agatha Christie and John Grisham.",
+      "name": "Coding",
+      "summary": "I love to keep learning, machine learning and data science are very interesting to me."
+    },
+    {
+      "name": "Fine Art",
+      "summary": "Ivan is also a professional artist and enjoys making fine art",
       "keywords": [
-        "mystery",
-        "Agatha Christie",
-        "John Grisham"
+        "painting",
+        "cubism",
+        "fine art"
       ]
     },
     {
-      "name": "hiking",
-      "summary": "Jane enjoys hiking, light mountain climbing, and has four summits under her belt!"
+      "name": "Video games",
+      "summary": "Will sometimes play a game or two."
     },
     {
-      "name": "yoga"
-    }
-  ],
-  "testimonials": [
-    {
-      "name": "John Davidson",
-      "flavor": "professional",
-      "quote": "Jane is awesome! I'd hire her again in a heartbeat.",
-      "private": false
-    },
-    {
-      "name": "Elias Fullstacker",
-      "flavor": "professional",
-      "quote": "I worked with Jane on Jabberwocky and can vouch for her awesome technical capabilities and attention to detail. Insta-hire.",
-      "private": false
-    },
-    {
-      "name": "Dana Nevins",
-      "flavor": "professional",
-      "quote": "I've known Jane personally and professionally for almost ten years. She is one in a million.",
-      "private": false
+      "name": "Family and dog",
+      "summary": "Wife, incoming baby, adopted mixed doberman."
     }
   ],
   "languages": [
@@ -307,8 +334,11 @@
     },
     {
       "language": "Spanish",
-      "level": "Moderate",
-      "years": 10
+      "level": "Native"
+    },
+    {
+      "language": "German & French",
+      "level": "Learn for fun"
     }
   ]
 }
