@@ -512,13 +512,13 @@
           </w:rPr>
           <w:t>(915)929-6803<w:br/></w:t>
         </w:r>
-        <w:hlink w:dest="http://ivantarin.com">
+        <w:hlink w:dest="http://www.devteamit.com">
           <w:r wsp:rsidRPr="003876BF">
             <w:rPr>
               <w:rStyle w:val="Hyperlink"/>
               <w:sz w:val="16"/>
             </w:rPr>
-            <w:t>http://ivantarin.com</w:t>
+            <w:t>http://www.devteamit.com</w:t>
           </w:r>
         </w:hlink>
       </w:p>
@@ -1407,21 +1407,6 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Moved machine learning categorization and classification, and reporting, to an API model</w:t></w:r>
-    </w:p>
-    <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
-      <w:pPr>
-        <w:pStyle w:val="ListParagraph"/>
-        <w:listPr>
-          <w:ilvl w:val="0"/>
-          <w:ilfo w:val="1"/>
-          <wx:t wx:val="•"/>
-          <wx:font wx:val="Calibri"/>
-        </w:listPr>
-        <w:rPr>
-          <w:sz-cs w:val="20"/>
-        </w:rPr>
-      </w:pPr>
       <w:r><w:rPr></w:rPr><w:t>In a two person team I assisted in building a full desktop application with Electron, Node, IBMCloud Object Storage that synced the user’s folder system with a private cloud server.</w:t></w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
@@ -1889,7 +1874,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Performed IT administration and deployments for Dunder Mifflin.</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Was an paralegal and advocate for homeless people in my communtity.</w:t></w:r>
     </w:p>
 
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">

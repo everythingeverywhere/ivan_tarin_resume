@@ -2,7 +2,7 @@ Ivan Tarin
 ============
 Email: ivan0tarin@gmail.com
 Tel: (915)929-6803
-Web: http://ivantarin.com
+Web: http://www.devteamit.com
 
 Software developer experienced in web, database, desktop, and mobile engineering. With more than 9 years professional work experience, and with one year in the software industry delivering project work at Techtonic for other companies. I have hands on experience in backend, frontend, web, api, desktop, and mobile apps.
 
@@ -27,7 +27,6 @@ Software developer experienced in web, database, desktop, and mobile engineering
 
 I am a Junior Developer at Techtonic a software company where we deliver solutions tailored to our clients such as web apps, databases, cloud service, ios/android mobile apps, and more.
   - In a two person team I assisted in building a full desktop application with Electron that integrated the user’s folder system and synced with a cloud server for one of our clients.Assisted in UI modifications to GIS map that used Ubisense MyWorld for another client.
-  - Moved machine learning categorization and classification, and reporting, to an API model
   - In a two person team I assisted in building a full desktop application with Electron, Node, IBMCloud Object Storage that synced the user’s folder system with a private cloud server.
   - Assisted in extracting database from SalesForce and I helped research and create demo of a backend to query their SF database objects.
   - Contributed to a large legacy Ubuntu web app that has been around for several decades by implement extracting vital data from their MySQL database and made UI changes that helped create a new report.
@@ -64,7 +63,7 @@ Performed IT administration and deployments for Dunder Mifflin.
 
 ### *Paralegal*, [Texas Rio Grande Legal Aid ](http://www.trla.org/) (2013-10 — 2016-02)
 
-Performed IT administration and deployments for Dunder Mifflin.
+Was an paralegal and advocate for homeless people in my communtity.
   - Prepare and present Retirement Disability(Title II) and Supplemental Security Income(Title XVI) cases to an Administrative Law Judge
   - Research cases through hundreds pages in medical records
   - Write briefs to persuade Administrative Law Judges
