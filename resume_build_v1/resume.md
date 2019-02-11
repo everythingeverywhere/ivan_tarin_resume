@@ -2,7 +2,8 @@ Ivan Tarin
 ============
 Email: ivan0tarin@gmail.com
 Tel: (915)929-6803
-Web: http://www.devteamit.com
+Web: https://github.com/everythingeverywhere
+Web: https://github.com/itarin
 
 Software developer experienced in web, database, desktop, and mobile engineering. With more than 9 years professional work experience, and with one year in the software industry delivering project work at Techtonic for other companies. I have hands on experience in backend, frontend, web, api, desktop, and mobile apps.
 
@@ -11,7 +12,7 @@ Software developer experienced in web, database, desktop, and mobile engineering
   - Programming Languages: bash JavaScript Python Willing to learn 
   - Web: JavaScript HTML 5 CSS React MVC REST 
   - JavaScript: Node.js Express jQuery AJAX Bootstrap React.js React Native ES5 ES6 
-  - node.js: node file system async express, mongoose, mongoDB 
+  - node.js: node file system async express mongoose mongoDB 
   - Python:  BeautifulSoup for web scraping and parsing HTML web pages Jupyter Notebooks pandas matplotlib scipy Pip3 pipenv  django JetBrains PyCharm 
   - Java: Intro college course 
   - Database: SQL SQLite MySQL PostgreSQL SOQL Mongoose SOQL NoSQL and Document Stores ORM 
@@ -25,11 +26,11 @@ Software developer experienced in web, database, desktop, and mobile engineering
 
 ### *Software Developer*, [Techtonic](https://www.techtonic.com) (2018-02 — Present)
 
-I am a Junior Developer at Techtonic a software company where we deliver solutions tailored to our clients such as web apps, databases, cloud service, ios/android mobile apps, and more.
-  - In a two person team I assisted in building a full desktop application with Electron that integrated the user’s folder system and synced with a cloud server for one of our clients.Assisted in UI modifications to GIS map that used Ubisense MyWorld for another client.
-  - In a two person team I assisted in building a full desktop application with Electron, Node, IBMCloud Object Storage that synced the user’s folder system with a private cloud server.
-  - Assisted in extracting database from SalesForce and I helped research and create demo of a backend to query their SF database objects.
-  - Contributed to a large legacy Ubuntu web app that has been around for several decades by implement extracting vital data from their MySQL database and made UI changes that helped create a new report.
+I am a Junior Developer at Techtonic a software company where we deliver solutions to our clients such as web apps, databases, cloud service, ios/android mobile apps, and more.
+  - Providing UI modifications to a GIS map using Ubisense MyWorld.
+  - Developing a full desktop cloud application with Electron, Node File System, and IBMCloud Object Storage that syncs the user’s folder system with a private cloud.
+  - Researching  and then extracting a database from SalesForce as a test in creating a backend to an app that queries SalesForce database objects.
+  - Extracting vital data from a MySQL database and making UI changes that helped create a new report in a legacy Ubuntu web app that has been around for several decades.
   - Currently, assisting in a react-native application to modify the UI, prepare API entry points, and update the redux store.
 
 ### *Paralegal, Office Clerk, Book keeping*, [Baker Law Group](http://www.jbakerlawgroup.com/) (2017-07 — 2017-11)
